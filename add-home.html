@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Vibestay - Responsive HTML Template</title>
+
+    <!-- Stylesheets -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon"> -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <!-- preloader -->
+      <div class="loader-wrap">
+        <div class="preloader">
+          <div class="preloader-close">x</div>
+          <div id="handle-preloader" class="handle-preloader">
+            <div class="animation-preloader">
+              <div class="loader-image">
+                <img src="assets/images/loader.gif" alt="loader" />
+              </div>
+              <div class="txt-loading">
+                <span data-text-preloader="v" class="letters-loading">v</span>
+                <span data-text-preloader="i" class="letters-loading">i</span>
+                <span data-text-preloader="b" class="letters-loading">b</span>
+                <span data-text-preloader="e" class="letters-loading">e</span>
+                <span data-text-preloader="s" class="letters-loading">s</span>
+                <span data-text-preloader="t" class="letters-loading">t</span>
+                <span data-text-preloader="a" class="letters-loading">a</span>
+                <span data-text-preloader="y" class="letters-loading">y</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- preloader end -->
+
+      <!-- header -->
+      <header class="main-header header-style-two">
+        <!-- Header Lower -->
+        <div class="header-lower">
+          <div class="container">
+            <div
+              class="inner-container d-flex align-items-center justify-content-between"
+            >
+              <div class="header-left-column">
+                <div class="logo-box">
+                  <div class="logo">
+                    <a href="index.html"
+                      ><img src="assets/images/logo.png" alt="logo"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="header-right-column">
+                <div class="add-home-header-btn d-flex align-items-center">
+                  <!-- explore-btn -->
+                  <div class="explore-btn">
+                    <button
+                      type="button"
+                      class="btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#mapModal"
+                    >
+                      <i class="fa-sharp fa-light fa-location-question"></i>
+                      <span>Explore rates near you?</span>
+                    </button>
+                    <div
+                      class="modal fade"
+                      id="mapModal"
+                      tabindex="-1"
+                      aria-labelledby="mapModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="container">
+                        <div class="modal-dialog custom-modal-width">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title" id="mapModalLabel">
+                                Explore your chosen area
+                              </h4>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="map-container">
+                                <iframe
+                                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.363551568743!2d90.38472261190846!3d23.87672382849521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c413e891ad29%3A0x98211bdb93d8dec1!2sSector%2011%2C%20Dhaka%201230!5e0!3m2!1sen!2sbd!4v1734855095184!5m2!1sen!2sbd"
+                                  style="border: 0"
+                                  allowfullscreen=""
+                                  loading="lazy"
+                                  referrerpolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- listing-btn -->
+                  <div class="listing-btn">
+                    <button
+                      type="button"
+                      class="btn-1"
+                      data-bs-toggle="modal"
+                      data-bs-target="#listingModal"
+                    >
+                      <i class="fa-light fa-house-user"></i>
+                      <span>Create a Listing</span>
+                    </button>
+                    <div
+                      class="modal fade"
+                      id="listingModal"
+                      tabindex="-1"
+                      aria-labelledby="listingModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog custom-modal-width">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title" id="listingModalLabel">
+                              Input your home details
+                            </h4>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="listing-container">
+                              <form>
+                                <!-- location-search -->
+                                <div class="location-search-box">
+                                  <div class="select-option">
+                                    <h5 class="select-option-title">
+                                      Location
+                                    </h5>
+                                    <div class="select-option-content">
+                                      <i
+                                        class="fa-sharp fa-light fa-paper-plane"
+                                      ></i>
+                                      <input
+                                        type="search"
+                                        class="soValue optionSearch"
+                                        placeholder="Search destination"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="location-search-dropdown">
+                                    <ul
+                                      class="search-options top-search-options"
+                                    >
+                                      <li>
+                                        <div class="options-list-icon">
+                                          <i
+                                            class="fa-thin fa-location-dot"
+                                          ></i>
+                                        </div>
+                                        <div class="options-list-inner">
+                                          <h6 class="country">Bangladesh</h6>
+                                          <p>Cox-Bazar, Kuakata, Sundorban</p>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="options-list-icon">
+                                          <i
+                                            class="fa-thin fa-location-dot"
+                                          ></i>
+                                        </div>
+                                        <div class="options-list-inner">
+                                          <h6 class="country">Malayshia</h6>
+                                          <p>Kuala Lumpur, Johor Bahru</p>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="options-list-icon">
+                                          <i
+                                            class="fa-thin fa-location-dot"
+                                          ></i>
+                                        </div>
+                                        <div class="options-list-inner">
+                                          <h6 class="country">Thailand</h6>
+                                          <p>Koh Phi, Khao Yai National Park</p>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="options-list-icon">
+                                          <i
+                                            class="fa-thin fa-location-dot"
+                                          ></i>
+                                        </div>
+                                        <div class="options-list-inner">
+                                          <h6 class="country">Ecuador</h6>
+                                          <p>Tiny home in San Juan</p>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="options-list-icon">
+                                          <i
+                                            class="fa-thin fa-location-dot"
+                                          ></i>
+                                        </div>
+                                        <div class="options-list-inner">
+                                          <h6 class="country">United States</h6>
+                                          <p>Elk Creek Lodge</p>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="options-list-icon">
+                                          <i
+                                            class="fa-thin fa-location-dot"
+                                          ></i>
+                                        </div>
+                                        <div class="options-list-inner">
+                                          <h6 class="country">Indonesia</h6>
+                                          <p>Island in Pulau Seribu, Jakarta</p>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="options-list-icon">
+                                          <i
+                                            class="fa-thin fa-location-dot"
+                                          ></i>
+                                        </div>
+                                        <div class="options-list-inner">
+                                          <h6 class="country">Philippines</h6>
+                                          <p>Room in El Nido</p>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="options-list-icon">
+                                          <i
+                                            class="fa-thin fa-location-dot"
+                                          ></i>
+                                        </div>
+                                        <div class="options-list-inner">
+                                          <h6 class="country">Maldives</h6>
+                                          <p>Room in hotel in Maalhos</p>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="options-list-icon">
+                                          <i
+                                            class="fa-thin fa-location-dot"
+                                          ></i>
+                                        </div>
+                                        <div class="options-list-inner">
+                                          <h6 class="country">Spain</h6>
+                                          <p>Entire apartment in Almuñécar</p>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <!-- location-search -->
+
+                                <!-- room search -->
+                                <div
+                                  class="destination-search-tab listing-room"
+                                >
+                                  <nav>
+                                    <h5>Type of Space</h5>
+                                    <div
+                                      class="nav nav-tabs"
+                                      id="nav-tab"
+                                      role="tablist"
+                                    >
+                                      <button
+                                        class="nav-link active"
+                                        id="nav-home-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#nav-home"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="nav-home"
+                                        aria-selected="true"
+                                      >
+                                        Entire place
+                                      </button>
+                                      <button
+                                        class="nav-link"
+                                        id="nav-profile-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#nav-profile"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="nav-profile"
+                                        aria-selected="false"
+                                      >
+                                        Private room
+                                      </button>
+                                    </div>
+                                  </nav>
+                                  <div class="tab-content" id="nav-tabContent">
+                                    <div
+                                      class="tab-pane show active"
+                                      id="nav-home"
+                                      role="tabpanel"
+                                      aria-labelledby="nav-home-tab"
+                                    >
+                                      <div
+                                        class="count-single listing-room-single"
+                                      >
+                                        <h5>Room</h5>
+                                        <div class="count-single-inner">
+                                          <button
+                                            type="button"
+                                            class="decrement"
+                                          >
+                                            -
+                                          </button>
+                                          <span class="adult">0</span>
+                                          <button
+                                            type="button"
+                                            class="increment"
+                                          >
+                                            +
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div
+                                      class="tab-pane"
+                                      id="nav-profile"
+                                      role="tabpanel"
+                                      aria-labelledby="nav-profile-tab"
+                                    >
+                                      <div
+                                        class="count-single listing-room-single"
+                                      >
+                                        <h5>Bed</h5>
+                                        <div class="count-single-inner">
+                                          <button
+                                            type="button"
+                                            class="decrement"
+                                          >
+                                            -
+                                          </button>
+                                          <span class="adult">0</span>
+                                          <button
+                                            type="button"
+                                            class="increment"
+                                          >
+                                            +
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- room search -->
+
+                                <div class="listing-btn-submit">
+                                  <button type="submit" class="btn-1">
+                                    Update your estimate
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Header Lower -->
+
+        <!-- sticky header -->
+        <div class="sticky-header">
+          <div class="header-upper">
+            <div class="container">
+              <div
+                class="inner-container d-flex align-items-center justify-content-between"
+              >
+                <div class="left-column d-flex align-items-center">
+                  <div class="logo-box">
+                    <div class="logo">
+                      <a href="index.html"
+                        ><img src="assets/images/logo.png" alt="logo"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="header-right-column">
+                  <div class="add-home-header-btn d-flex align-items-center">
+                    <!-- explore-btn -->
+                    <div class="explore-btn">
+                      <button
+                        type="button"
+                        class="btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#mapModal"
+                      >
+                        <i class="fa-sharp fa-light fa-location-question"></i>
+                        <span>Explore rates near you?</span>
+                      </button>
+                      <div
+                        class="modal fade"
+                        id="mapModal"
+                        tabindex="-1"
+                        aria-labelledby="mapModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="container">
+                          <div class="modal-dialog custom-modal-width">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title" id="mapModalLabel">
+                                  Explore your chosen area
+                                </h4>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="map-container">
+                                  <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.363551568743!2d90.38472261190846!3d23.87672382849521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c413e891ad29%3A0x98211bdb93d8dec1!2sSector%2011%2C%20Dhaka%201230!5e0!3m2!1sen!2sbd!4v1734855095184!5m2!1sen!2sbd"
+                                    style="border: 0"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                  ></iframe>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- listing-btn -->
+                    <div class="listing-btn">
+                      <button
+                        type="button"
+                        class="btn-1"
+                        data-bs-toggle="modal"
+                        data-bs-target="#listingModal"
+                      >
+                        <i class="fa-light fa-house-user"></i>
+                        <span>Create a Listing</span>
+                      </button>
+                      <div
+                        class="modal fade"
+                        id="listingModal"
+                        tabindex="-1"
+                        aria-labelledby="listingModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog custom-modal-width">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title" id="listingModalLabel">
+                                Input your home details
+                              </h4>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="listing-container">
+                                <form>
+                                  <!-- location-search -->
+                                  <div class="location-search-box">
+                                    <div class="select-option">
+                                      <h5 class="select-option-title">
+                                        Location
+                                      </h5>
+                                      <div class="select-option-content">
+                                        <i
+                                          class="fa-sharp fa-light fa-paper-plane"
+                                        ></i>
+                                        <input
+                                          type="search"
+                                          class="soValue optionSearch"
+                                          placeholder="Search destination"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="location-search-dropdown">
+                                      <ul
+                                        class="search-options top-search-options"
+                                      >
+                                        <li>
+                                          <div class="options-list-icon">
+                                            <i
+                                              class="fa-thin fa-location-dot"
+                                            ></i>
+                                          </div>
+                                          <div class="options-list-inner">
+                                            <h6 class="country">Bangladesh</h6>
+                                            <p>Cox-Bazar, Kuakata, Sundorban</p>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="options-list-icon">
+                                            <i
+                                              class="fa-thin fa-location-dot"
+                                            ></i>
+                                          </div>
+                                          <div class="options-list-inner">
+                                            <h6 class="country">Malayshia</h6>
+                                            <p>Kuala Lumpur, Johor Bahru</p>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="options-list-icon">
+                                            <i
+                                              class="fa-thin fa-location-dot"
+                                            ></i>
+                                          </div>
+                                          <div class="options-list-inner">
+                                            <h6 class="country">Thailand</h6>
+                                            <p>
+                                              Koh Phi, Khao Yai National Park
+                                            </p>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="options-list-icon">
+                                            <i
+                                              class="fa-thin fa-location-dot"
+                                            ></i>
+                                          </div>
+                                          <div class="options-list-inner">
+                                            <h6 class="country">Ecuador</h6>
+                                            <p>Tiny home in San Juan</p>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="options-list-icon">
+                                            <i
+                                              class="fa-thin fa-location-dot"
+                                            ></i>
+                                          </div>
+                                          <div class="options-list-inner">
+                                            <h6 class="country">
+                                              United States
+                                            </h6>
+                                            <p>Elk Creek Lodge</p>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="options-list-icon">
+                                            <i
+                                              class="fa-thin fa-location-dot"
+                                            ></i>
+                                          </div>
+                                          <div class="options-list-inner">
+                                            <h6 class="country">Indonesia</h6>
+                                            <p>
+                                              Island in Pulau Seribu, Jakarta
+                                            </p>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="options-list-icon">
+                                            <i
+                                              class="fa-thin fa-location-dot"
+                                            ></i>
+                                          </div>
+                                          <div class="options-list-inner">
+                                            <h6 class="country">Philippines</h6>
+                                            <p>Room in El Nido</p>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="options-list-icon">
+                                            <i
+                                              class="fa-thin fa-location-dot"
+                                            ></i>
+                                          </div>
+                                          <div class="options-list-inner">
+                                            <h6 class="country">Maldives</h6>
+                                            <p>Room in hotel in Maalhos</p>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="options-list-icon">
+                                            <i
+                                              class="fa-thin fa-location-dot"
+                                            ></i>
+                                          </div>
+                                          <div class="options-list-inner">
+                                            <h6 class="country">Spain</h6>
+                                            <p>Entire apartment in Almuñécar</p>
+                                          </div>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <!-- location-search -->
+
+                                  <!-- room search -->
+                                  <div
+                                    class="destination-search-tab listing-room"
+                                  >
+                                    <nav>
+                                      <h5>Type of Space</h5>
+                                      <div
+                                        class="nav nav-tabs"
+                                        id="nav-tab"
+                                        role="tablist"
+                                      >
+                                        <button
+                                          class="nav-link active"
+                                          id="nav-home-tab"
+                                          data-bs-toggle="tab"
+                                          data-bs-target="#nav-home"
+                                          type="button"
+                                          role="tab"
+                                          aria-controls="nav-home"
+                                          aria-selected="true"
+                                        >
+                                          Entire place
+                                        </button>
+                                        <button
+                                          class="nav-link"
+                                          id="nav-profile-tab"
+                                          data-bs-toggle="tab"
+                                          data-bs-target="#nav-profile"
+                                          type="button"
+                                          role="tab"
+                                          aria-controls="nav-profile"
+                                          aria-selected="false"
+                                        >
+                                          Private room
+                                        </button>
+                                      </div>
+                                    </nav>
+                                    <div
+                                      class="tab-content"
+                                      id="nav-tabContent"
+                                    >
+                                      <div
+                                        class="tab-pane show active"
+                                        id="nav-home"
+                                        role="tabpanel"
+                                        aria-labelledby="nav-home-tab"
+                                      >
+                                        <div
+                                          class="count-single listing-room-single"
+                                        >
+                                          <h5>Room</h5>
+                                          <div class="count-single-inner">
+                                            <button
+                                              type="button"
+                                              class="decrement"
+                                            >
+                                              -
+                                            </button>
+                                            <span class="adult">0</span>
+                                            <button
+                                              type="button"
+                                              class="increment"
+                                            >
+                                              +
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div
+                                        class="tab-pane"
+                                        id="nav-profile"
+                                        role="tabpanel"
+                                        aria-labelledby="nav-profile-tab"
+                                      >
+                                        <div
+                                          class="count-single listing-room-single"
+                                        >
+                                          <h5>Bed</h5>
+                                          <div class="count-single-inner">
+                                            <button
+                                              type="button"
+                                              class="decrement"
+                                            >
+                                              -
+                                            </button>
+                                            <span class="adult">0</span>
+                                            <button
+                                              type="button"
+                                              class="increment"
+                                            >
+                                              +
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- room search -->
+
+                                  <div class="listing-btn-submit">
+                                    <button type="submit" class="btn-1">
+                                      Update your estimate
+                                    </button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sticky header -->
+      </header>
+      <!-- header -->
+
+      <!-- banner-section -->
+      <section class="banner-three banner-section">
+        <div class="container">
+          <div class="swiper-container banner-slider-1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-xl-5 col-lg-5">
+                    <div class="banner-content-box">
+                      <h2>
+                        Vacation Rental Management by Vibe<span>Stay</span>
+                      </h2>
+                      <p>
+                        Trusted for more than 20years,It helps like you make
+                        extra income and welcome wonderful guest. Start your
+                        story with us today.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 offset-xl-1 col-lg-7">
+                    <div class="banner-three-right-content">
+                      <div class="arrow-shape">
+                        <img
+                          src="assets/images/shape/arrow-shape.png"
+                          alt="image"
+                        />
+                      </div>
+                      <div class="banner-three-shape-1">
+                        <img
+                          src="assets/images/shape/banner-shape-1.png"
+                          alt="image"
+                        />
+                      </div>
+                      <div class="banner-three-estimate">
+                        <h3>$136</h3>
+                        <p>
+                          <strong>4nights</strong> at an estimated $34 a night
+                        </p>
+                      </div>
+                      <div class="banner-progress">
+                        <div class="circlechart" data-percentage="82"></div>
+                      </div>
+                      <div class="banner-three-image-box">
+                        <div class="banner-three-shape">
+                          <img
+                            src="assets/images/banner/banner-three-shape.png"
+                            alt="shape"
+                          />
+                        </div>
+                        <div class="banner-three-image">
+                          <img
+                            src="assets/images/banner/banner-three-image.png"
+                            alt="image"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-xl-5 col-lg-5">
+                    <div class="banner-content-box">
+                      <h2>
+                        Vacation Rental Management by Vibe<span>Stay</span>
+                      </h2>
+                      <p>
+                        Trusted for more than 20years,It helps like you make
+                        extra income and welcome wonderful guest. Start your
+                        story with us today.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 offset-xl-1 col-lg-7">
+                    <div class="banner-three-right-content">
+                      <div class="arrow-shape">
+                        <img
+                          src="assets/images/shape/arrow-shape.png"
+                          alt="image"
+                        />
+                      </div>
+                      <div class="banner-three-shape-1">
+                        <img
+                          src="assets/images/shape/banner-shape-1.png"
+                          alt="image"
+                        />
+                      </div>
+                      <div class="banner-three-estimate">
+                        <h3>$136</h3>
+                        <p>
+                          <strong>4nights</strong> at an estimated $34 a night
+                        </p>
+                      </div>
+                      <div class="banner-progress">
+                        <div class="circlechart" data-percentage="82"></div>
+                      </div>
+                      <div class="banner-three-image-box">
+                        <div class="banner-three-shape">
+                          <img
+                            src="assets/images/banner/banner-three-shape.png"
+                            alt="shape"
+                          />
+                        </div>
+                        <div class="banner-three-image">
+                          <img
+                            src="assets/images/banner/banner-three-image.png"
+                            alt="image"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner-section -->
+
+      <!-- banner three search -->
+      <section class="destination-search-three">
+        <div class="container">
+          <div class="destination-search-three-container">
+            <form>
+              <div class="location-search-box">
+                <div class="select-option">
+                  <div class="select-icon">
+                    <i class="fa-thin fa-location-dot"></i>
+                  </div>
+                  <div class="select-option-content">
+                    <h6 class="select-option-title">Where</h6>
+                    <input
+                      type="search"
+                      class="soValue optionSearch"
+                      placeholder="Search destination"
+                    />
+                  </div>
+                  <button type="submit" class="destination-search-three-submit">
+                    <i class="fa-light fa-magnifying-glass"></i>
+                  </button>
+                </div>
+                <div class="location-search-dropdown">
+                  <ul class="search-options top-search-options">
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-thin fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Bangladesh</h6>
+                        <p>Cox-Bazar, Kuakata, Sundorban</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-thin fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Malayshia</h6>
+                        <p>Kuala Lumpur, Johor Bahru</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-thin fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Thailand</h6>
+                        <p>Koh Phi, Khao Yai National Park</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-thin fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Ecuador</h6>
+                        <p>Tiny home in San Juan</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-thin fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">United States</h6>
+                        <p>Elk Creek Lodge</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-thin fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Indonesia</h6>
+                        <p>Island in Pulau Seribu, Jakarta</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-thin fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Philippines</h6>
+                        <p>Room in El Nido</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-thin fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Maldives</h6>
+                        <p>Room in hotel in Maalhos</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-thin fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Spain</h6>
+                        <p>Entire apartment in Almuñécar</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- banner three search -->
+
+      <!-- services 3 -->
+      <div class="services-three">
+        <div class="container">
+          <div class="common-title">
+            <h3>Bring The Right Guests within Reach</h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="services-single">
+                <div class="service-icon">
+                  <img src="assets/images/icons/service-5.png" alt="icon" />
+                </div>
+                <div class="services-content">
+                  <a href="#0">One-to-one guidance from a Superhost</a>
+                  <p>
+                    Superhosts are experienced, highly rated hosts who are
+                    committed to providing great stays for guests.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="services-single">
+                <div class="service-icon">
+                  <img src="assets/images/icons/service-6.png" alt="icon" />
+                </div>
+                <div class="services-content">
+                  <a href="#0">An experienced guest for your first booking</a>
+                  <p>
+                    For your first booking, you can choose to welcome an
+                    experienced guest who has at least three stays and a good
+                    track record on
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="services-single">
+                <div class="service-icon">
+                  <img src="assets/images/icons/service-7.png" alt="icon" />
+                </div>
+                <div class="services-content">
+                  <a href="#0">Specialized support from VibeStay</a>
+                  <p>
+                    Superhosts are experienced, highly rated hosts who are
+                    committed to providing great stays for guests.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="services-single">
+                <div class="service-icon">
+                  <img src="assets/images/icons/service-8.png" alt="icon" />
+                </div>
+                <div class="services-content">
+                  <a href="#0">Attack your ideal guest with fitures</a>
+                  <p>
+                    Superhosts are experienced, highly rated hosts who are
+                    committed to providing great stays for guests.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- services 3 -->
+
+      <!-- about 2 -->
+      <section class="about-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="about-two-left-content">
+                <div class="common-title">
+                  <h3>Rent your Apartment, Also Host on VibeStay</h3>
+                  <h6>
+                    We’ve partnered with apartment buildings across the US so
+                    you can rent a place to live and host on Airbnb part-time.
+                    The typical host earned $3650/year and hosted 28 nights.
+                  </h6>
+                  <p>
+                    *According to internal data on money received by hosts, the
+                    usual host earnings amount is the median amount of profits
+                    for hosts in US-friendly apartment buildings between January
+                    1 and December 31, 2023.
+                  </p>
+                  <a href="#0" class="btn-2"
+                    >Explore Cities <i class="fa-regular fa-angle-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-two-right-content">
+                <div class="about-two-right-image">
+                  <img src="assets/images/resource/about-4.jpg" alt="image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about 2 -->
+
+      <!-- solution -->
+      <section class="solution">
+        <div class="container">
+          <div class="common-title">
+            <h3>Best Solution on Guest presence with Protection</h3>
+          </div>
+          <div class="solution-table">
+            <div class="solution-table-inner">
+              <div class="solution-header">
+                <div class="solution-header-title"><h6>VibeStay</h6></div>
+                <div class="solution-header-title"><h6>Competitors</h6></div>
+              </div>
+              <div class="solution-body">
+                <ul>
+                  <li>
+                    <div class="solution-content">
+                      <h6>Guest identity verification</h6>
+                      <p>
+                        Our comprehensive verification system checks details
+                        such as name, address, government ID and more to confirm
+                        the identity of guests who book on VibeStay.
+                      </p>
+                    </div>
+                    <div class="compair-mark">
+                      <div class="solution-mark">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="solution-mark">
+                        <i class="fa-light fa-xmark"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="solution-content">
+                      <h6>Guest identity verification</h6>
+                      <p>
+                        Our comprehensive verification system checks details
+                        such as name, address, government ID and more to confirm
+                        the identity of guests who book on VibeStay.
+                      </p>
+                    </div>
+                    <div class="compair-mark">
+                      <div class="solution-mark">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="solution-mark">
+                        <i class="fa-light fa-xmark"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="solution-content">
+                      <h6>Guest identity verification</h6>
+                      <p>
+                        Our comprehensive verification system checks details
+                        such as name, address, government ID and more to confirm
+                        the identity of guests who book on VibeStay.
+                      </p>
+                    </div>
+                    <div class="compair-mark">
+                      <div class="solution-mark">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="solution-mark">
+                        <i class="fa-light fa-xmark"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="solution-content">
+                      <h6>Guest identity verification</h6>
+                    </div>
+                    <div class="compair-mark">
+                      <div class="solution-mark">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="solution-mark">
+                        <i class="fa-light fa-xmark"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="solution-content">
+                      <h6>Guest identity verification</h6>
+                    </div>
+                    <div class="compair-mark">
+                      <div class="solution-mark">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="solution-mark">
+                        <i class="fa-light fa-xmark"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="solution-content">
+                      <h6>Guest identity verification</h6>
+                    </div>
+                    <div class="compair-mark">
+                      <div class="solution-mark">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="solution-mark">
+                        <i class="fa-light fa-xmark"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="solution-content">
+                      <h6>Guest identity verification</h6>
+                    </div>
+                    <div class="compair-mark">
+                      <div class="solution-mark">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="solution-mark">
+                        <i class="fa-light fa-xmark"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="solution-content">
+                      <h6>Guest identity verification</h6>
+                      <p>
+                        Our comprehensive verification system checks details
+                        such as name, address, government ID and more to confirm
+                        the identity of guests who book on VibeStay.
+                      </p>
+                    </div>
+                    <div class="compair-mark">
+                      <div class="solution-mark">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="solution-mark">
+                        <i class="fa-light fa-xmark"></i>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- solution -->
+
+      <!-- faq -->
+      <section class="faq">
+        <div class="container">
+          <div class="faq-container">
+            <div class="common-title">
+              <h3>FAQ Fom The Host</h3>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="faq-left-container">
+                  <div class="faq-left-image">
+                    <img src="assets/images/team/team-2.png" alt="image" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="faq-right-container">
+                  <div class="faq-accordion">
+                    <div
+                      class="accordion accordion-flush"
+                      id="accordionFlushExample"
+                    >
+                      <div class="accordion-item">
+                        <h6 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseOne"
+                          >
+                            What make VibeStay the ideal choice?
+                          </button>
+                        </h6>
+                        <div
+                          id="flush-collapseOne"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              Guests are interested in all kinds of places. We
+                              have listings for tiny homes, cabins, treehouses,
+                              and more. Even a spare room can be a great place
+                              to stay.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h6 class="accordion-header">
+                          <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseTwo"
+                          >
+                            Is my place right for VibeStay
+                          </button>
+                        </h6>
+                        <div
+                          id="flush-collapseTwo"
+                          class="accordion-collapse collapse show"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              Guests are interested in all kinds of places. We
+                              have listings for tiny homes, cabins, treehouses,
+                              and more. Even a spare room can be a great place
+                              to stay.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h6 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseThree"
+                          >
+                            What make VibeStay the ideal choice?
+                          </button>
+                        </h6>
+                        <div
+                          id="flush-collapseThree"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              Guests are interested in all kinds of places. We
+                              have listings for tiny homes, cabins, treehouses,
+                              and more. Even a spare room can be a great place
+                              to stay.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h6 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseFour"
+                          >
+                            How much should I interact with guests?
+                          </button>
+                        </h6>
+                        <div
+                          id="flush-collapseFour"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              Guests are interested in all kinds of places. We
+                              have listings for tiny homes, cabins, treehouses,
+                              and more. Even a spare room can be a great place
+                              to stay.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h6 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseFive"
+                          >
+                            What make VibeStay the ideal choice?
+                          </button>
+                        </h6>
+                        <div
+                          id="flush-collapseFive"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              Guests are interested in all kinds of places. We
+                              have listings for tiny homes, cabins, treehouses,
+                              and more. Even a spare room can be a great place
+                              to stay.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- faq -->
+
+      <!-- footer -->
+      <footer id="footer" class="main-footer footer-one">
+        <div
+          class="bg-layer"
+          style="background: url('assets/images/background/footer-bg.jpg')"
+        ></div>
+        <div class="container">
+          <div class="footer-widget-container">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="footer-widget logo-widget">
+                  <div class="logo-widget-inner">
+                    <div class="footer-logo">
+                      <img src="assets/images/logo-2.png" alt="logo" />
+                    </div>
+                    <p>
+                      StayVibe is a web application designed to provide users
+                      with a seamless and user-friendly experience when
+                      searching for and booking vacation rentals and experience
+                    </p>
+                    <div class="social-media">
+                      <ul>
+                        <li>
+                          <a href="#0"
+                            ><i class="fa-brands fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#0"><i class="icon-twiter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#0"
+                            ><i class="fa-brands fa-instagram"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#0"
+                            ><i class="fa-brands fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 offset-xl-1 col-lg-4 col-md-6">
+                <div class="footer-widget company-widget">
+                  <div class="company-widget-inner">
+                    <h6 class="footer-widget-title">Company</h6>
+                    <ul class="footer-widget-list">
+                      <li><a href="">About Us</a></li>
+                      <li><a href="">Blog</a></li>
+                      <li><a href="">New features</a></li>
+                      <li><a href="">Investors</a></li>
+                      <li><a href="">Gift cards</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-4">
+                <div class="footer-widget guest-widget">
+                  <div class="guest-widget-inner">
+                    <h6 class="footer-widget-title">For Guest</h6>
+                    <ul class="footer-widget-list">
+                      <li><a href="">Add your home</a></li>
+                      <li><a href="">Hosting resources</a></li>
+                      <li><a href="">Community forum</a></li>
+                      <li><a href="">Hosting responsibly</a></li>
+                      <li><a href="">Find a co‑host</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-6 col-md-8">
+                <div class="footer-widget support-widget">
+                  <div class="support-widget-inner">
+                    <h6 class="footer-widget-title">Support</h6>
+                    <ul class="footer-widget-list">
+                      <li><a href="">Help Center</a></li>
+                      <li><a href="">Vibestay do</a></li>
+                      <li><a href="">Anti-discrimination</a></li>
+                      <li><a href="">Disability support</a></li>
+                      <li><a href="">Cancellation options</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <div class="footer-copyright-content">
+              <div class="copyright-left">
+                <p>
+                  &copy; 2024 <a href="#0">VibeStay</a> holding Inc.All Right
+                  reserved
+                </p>
+                <div class="footer-terms">
+                  <a href="#0">Terms</a>
+                  <a href="#0">Sitemap</a>
+                  <a href="#0">Privacy</a>
+                </div>
+              </div>
+              <div class="copyright-right">
+                <div class="footer-language">
+                  <a href="#0"><i class="fa-light fa-globe"></i> English(US)</a>
+                  <a href="#0">$ USD</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/search-box.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/jarallax.min.js"></script>
+    <script src="assets/js/jquery.paroller.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/socialSharing.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/nouislider.min.js"></script>
+    <script src="assets/js/daterangepicker.min.js"></script>
+    <script src="assets/js/progresscircle.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+/* Popular destination section */
+.popular-destination-section {
+  padding-top: 120px;
+}
+.popular-destination-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  grid-template-rows: auto auto;
+}
+
+/* Popular destination end */
+.destination-box {
+  border-radius: 16px;
+  background-color: var(--white-color);
+  padding: 24px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.destination-box .img-box {
+  border-radius: 16px;
+  position: relative;
+}
+.destination-box .text-box {
+  margin-top: 24px;
+}
+.destination-box .text-box .title {
+  color: var(--black-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+.destination-box .text-box .title:hover {
+  color: var(--primary-color);
+}
+.destination-box .text-box .title i {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  background-color: var(--bg-10);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.destination-badge {
+  display: inline-flex;
+  padding: 6px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+html[dir="rtl"] .destination-box .text-box .title i {
+  transform: rotate(-90deg);
+}
+/* Destination box2 start */
+.destination-box2 {
+  position: relative;
+}
+.destination-box2.large {
+  grid-row: span 2;
+}
+.destination-box2.large .img-box img {
+  aspect-ratio: 29/32;
+}
+.destination-box2 .img-box {
+  position: relative;
+  height: 100%;
+  min-height: 200px;
+}
+.destination-box2 .img-box img {
+  height: 100%;
+  border-radius: 16px;
+  aspect-ratio: 713/381;
+  object-fit: cover;
+}
+.destination-box2 .text-box {
+  position: absolute;
+  border-radius: 0 0 16px 16px;
+  background: linear-gradient(
+    91deg,
+    rgba(23, 23, 23, 0.24) 0.48%,
+    rgba(199, 199, 199, 0.24) 99.24%
+  );
+  padding: 32px;
+  left: 0;
+  bottom: 0;
+}
+.destination-box2 .text-box .title {
+  color: var(--white-color);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 130%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+.arrow-btn2-wrapper {
+  padding: 0 0 10px 10px;
+  background-color: var(--white-color);
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  border-radius: 0 16px;
+}
+.arrow-btn2 {
+  border-radius: 16px;
+  background: var(--bg-10);
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  position: relative;
+}
+.arrow-btn2::before {
+  position: absolute;
+  content: "";
+  bottom: 59px;
+  left: -40px;
+  background: #6b313100;
+  width: 30px;
+  height: 30px;
+  border-top-right-radius: 14px;
+  box-shadow: 10px -10px 0 0px #ffffff;
+}
+.arrow-btn2::after {
+  position: absolute;
+  content: "";
+  bottom: -40px;
+  left: 59px;
+  background: #6b313100;
+  width: 30px;
+  height: 30px;
+  border-top-right-radius: 14px;
+  box-shadow: 10px -10px 0 0px #ffffff;
+}
+@media (max-width: 1199px) {
+  .destination-box2 .text-box .title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 991px) {
+  .popular-destination-grid-container {
+    gap: 20px;
+  }
+  .destination-box2 .text-box {
+    padding: 16px;
+  }
+  .destination-box2 .text-box .title {
+    font-size: 18px;
+  }
+  .popular-destination-section {
+    padding-top: 60px;
+  }
+  .arrow-btn2 {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    border-radius: 12px;
+  }
+  .arrow-btn2::before {
+    bottom: 25px;
+  }
+  .arrow-btn2::after {
+    left: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .popular-destination-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 350px) {
+  .destination-box2 .text-box {
+    padding: 10px;
+  }
+}
+/* Destination box2 end */

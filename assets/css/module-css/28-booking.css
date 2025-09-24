@@ -1,0 +1,287 @@
+.booking-about{
+   padding: 100px 0;
+}
+.booking-content h3 {
+    color: var(--white-color);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+.booking-content p {
+    margin: 20px 0 32px;
+    color: var(--white-color) !important;
+}
+
+/* booking-services */
+.booking-services .common-title{
+   max-width: 630px;
+   width: 100%;
+}
+.booking-services{
+   padding: 110px 0 90px;
+}
+.booking-services .services-single {
+   height: 100%;
+   padding: 15px;
+   border-radius: 16px;
+   border: 1px solid var(--border-1);
+}
+
+/* booking-work */
+.booking-work{
+   padding: 0 0 110px;
+}
+.booking-work-list ul{
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+}
+.booking-work-list ul li{
+   display: flex;
+   gap: 20px;
+}
+.booking-work-list ul li .list-number{
+   max-width: 50px;
+   width: 100%;
+   height: 50px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid var(--border-1);
+   background: var(--white-color);
+   font-size: 20px;
+}
+.booking-work-image{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.booking-work-image img{
+   width: 100%;
+   height: 100%;
+}
+
+/* booking-register */
+.booking-register{
+   padding: 110px 0;
+}
+.booking-register-container{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.booking-register-content .common-title{
+   margin-bottom: 0;
+   text-align: center;
+}
+.booking-register-content .common-title h3, .booking-register-content .common-title p{
+   color: var(--white-color) !important;
+}
+
+
+/* booking register */
+.booking-signin{
+    padding: 93px 0 93px;
+    overflow: hidden;
+}
+.booking-signin .sign-in-container{
+    position: relative;
+    padding: 48px 40px;
+    border-radius: 36px;
+    background: var(--white-color);
+    box-shadow: 3px -1px 20px 0 rgba(235, 235, 235, 0.30);
+}
+.booking-signin .signin-image{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.booking-signin .signin-image img{
+    aspect-ratio: 1 / 1;
+}
+.booking-signin .sign-in-title{
+    margin-top: 45px;
+}
+.booking-signin .sign-in-title h3{
+    font-size: 36px !important;
+    font-weight: 600;
+    line-height: 42px;
+    margin-bottom: 0;
+}
+.booking-signin-form .form-control {
+    border-radius: 8px;
+    border: 1px solid var(--border-2);
+    background: var(--white-color);
+    padding: 17px 17px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.booking-signin .password-box, .booking-signin .password-box-two{
+    position: relative;
+}
+.booking-signin .password-box i, .booking-signin .password-box-two i{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+.booking-signin .form-check .form-check-input {
+    float: left !important;
+    margin-left: 0;
+}
+.booking-signin label.form-check-label {
+    margin-left: 5px;
+}
+.booking-signin .rember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.booking-signin .rember .form-check {
+    margin-bottom: 0;
+}
+.booking-signin rember .rember-password a{
+    color: var(--black-color);
+}
+.booking-signin .rember .rember-password a:hover{
+    color: var(--primary-color);
+}
+.booking-signin .sign-in-btn button {
+    margin-top: 40px;
+    width: 100%;
+    padding: 20px 16px;
+    text-transform: capitalize;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+.booking-signin .sign-in-btn button::after{
+    border-radius: 8px;
+}
+
+.booking-signin .media-login{
+    max-width: 448px;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+.booking-signin .media-login-border{
+    position: relative;
+    text-align: center;
+}
+.booking-signin .media-login-border h5{
+    position: relative;
+    width: 45px;
+    color: var(--text-color-1);
+    font-size: 16px !important;
+    font-weight: 500;
+    line-height: 24px;
+    background: var(--white-color);
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+.booking-signin .media-login-border::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #D6DFDF;
+    position: absolute;
+    left: 0;
+    top: 16px;
+}
+.booking-signin .media-login ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.booking-signin .media-login ul li a{
+    width: 110px;
+    height: 72px;
+    border-radius: 4px;
+    border: 1px solid #D6DFDF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.booking-signin .media-login ul li a img{
+    transition: 0.5s;
+}
+.booking-signin .media-login ul li a:hover img{
+    transform: scale(1.1);
+}
+
+.booking-signin .signup-account p{
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.booking-signin .signup-account p a:hover{
+    color: var(--primary-color) !important;
+}
+
+
+/* Large screen  */
+@media only screen and (min-width: 1200px) and (max-width: 1319px) {
+    .booking-signin .sign-in-title h3 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+}
+
+/* Medium screen  */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .booking-signin .sign-in-title h3 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .booking-signin .sign-in-container-navigation {
+        margin-top: 50px;
+    }
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .booking-signin .sign-in {
+        padding: 80px 0 80px;
+    }
+    .booking-signin .sign-in-container {
+        margin-right: 0;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px){
+    .booking-signin .sign-in {
+        padding: 80px 0 80px;
+    }
+    .booking-signin .sign-in-container {
+        margin-right: 0;
+        padding: 38px 15px;
+    }
+    .booking-signin .sign-in-title h3 {
+        font-size: 28px !important;
+        line-height: 29px;
+    }
+    .booking-signin .sign-in-btn button {
+        padding: 15px 16px;
+    }
+    .booking-signin .media-login ul li a {
+        width: 80px;
+        height: 50px;
+    }
+    .booking-signin .media-login ul li a img{
+        width: 30px;
+        height: 30px;
+    }
+}
