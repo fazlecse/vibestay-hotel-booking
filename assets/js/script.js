@@ -1150,6 +1150,30 @@
   });
   // categories-nav-slider
 
+  if ($(".banner-three-swiper").length) {
+    var swiper = new Swiper(".banner-three-swiper", {
+      grabCursor: true,
+      slidesPerView: 2,
+      spaceBetween: 30,
+      mousewheel: {
+        thresholdDelta: 70,
+      },
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      breakpoints: {
+        1199: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        991: {
+          slidesPerView: 1,
+        },
+      },
+    });
+  }
+
   // owl theme
   if ($(".theme_carousel").length) {
     $(".theme_carousel").each(function (index) {
@@ -1199,20 +1223,13 @@
   }
   // Elements Animation
 
-  // curved-circle
-  $(window).scroll(function () {
-    var theta = $(window).scrollTop() / 15;
-    $(".curved-circle").css({ transform: "rotate(" + theta + "deg)" });
-  });
-  // curved-circle
-
   $(window).on("load", function () {
     //Jquery Curved Circle
     if ($(".curved-circle").length) {
       $(".curved-circle").circleType({
         position: "absolute",
         dir: 1,
-        radius: 70,
+        radius: 81,
         forceHeight: true,
         forceWidth: true,
       });
@@ -1254,4 +1271,200 @@
       }
     );
   }
+
+  // Hero title gsap split text
+  if (document.querySelector(".banner-section-three-title")) {
+    gsap.registerPlugin(SplitText);
+
+    // Wait until fonts are loaded
+    document.fonts.ready.then(() => {
+      let split = new SplitText(".banner-section-three-title", {
+        type: "words",
+      });
+
+      // reapply gradient on each word
+      split.words.forEach((word) => {
+        word.style.background =
+          "linear-gradient(180deg, #0f0f10 28.75%, rgba(129,175,185,0.2) 72.5%)";
+        word.style.backgroundClip = "text";
+        word.style.webkitBackgroundClip = "text";
+        word.style.webkitTextFillColor = "transparent";
+      });
+
+      // animate words
+      gsap.from(split.words, {
+        duration: 3,
+        y: 200,
+        autoAlpha: 0,
+        stagger: 0.08,
+        ease: "power4.out",
+      });
+    });
+  }
+
+  // gsap split text
+  if (document.querySelector(".split-text")) {
+    gsap.registerPlugin(SplitText, ScrollTrigger);
+
+    // Wait until fonts are loaded
+    document.fonts.ready.then(() => {
+      document.querySelectorAll(".split-text").forEach((el) => {
+        let split = SplitText.create(el, {
+          type: "lines, words",
+          mask: "lines",
+          autoSplit: true,
+        });
+
+        gsap.from(split.words, {
+          duration: 1,
+          y: 100,
+          autoAlpha: 0,
+          stagger: 0.05,
+          ease: "power4.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+          },
+        });
+      });
+    });
+  }
+
+  // Scroll to spread card
+  // const featureSection2 = document.querySelector(".feature-section2-inner");
+  // if (featureSection2) {
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   const item1 = document.querySelector(".feature-box2.box1");
+  //   const item2 = document.querySelector(".feature-box2.box2");
+  //   const item3 = document.querySelector(".feature-box2.box3");
+  //   const item4 = document.querySelector(".feature-box2.box4");
+
+  //   const containerWidth = featureSection2.offsetWidth;
+
+  //   const item1Width = item1.offsetWidth;
+  //   const item2Width = item2.offsetWidth;
+  //   const item3Width = item3.offsetWidth;
+  //   const item4Width = item4.offsetWidth;
+
+  //   const targetX1 = containerWidth / 2 - item1Width / 2;
+  //   const targetX2 = containerWidth / 2 - item2Width / 2;
+  //   const targetX3 = containerWidth / 2 - item3Width / 2;
+  //   const targetX4 = containerWidth / 2 - item4Width / 2;
+  //   console.log(targetX1);
+
+  //   gsap.to(item1, {
+  //     x: -targetX1,
+  //     y: -205,
+  //     duration: 1,
+  //     ease: "sine.inOut",
+  //     scrollTrigger: {
+  //       trigger: featureSection2,
+  //       start: "top 80%",
+  //       toggleActions: "play reverse play reverse",
+  //     },
+  //   });
+
+  //   gsap.to(item2, {
+  //     x: -180,
+  //     y: 205,
+  //     duration: 1,
+  //     ease: "sine.inOut",
+  //     scrollTrigger: {
+  //       trigger: featureSection2,
+  //       start: "top 100%",
+  //       toggleActions: "play reverse play reverse",
+  //     },
+  //   });
+
+  //   gsap.to(item3, {
+  //     x: 180,
+  //     y: -205,
+  //     duration: 1,
+  //     ease: "sine.inOut",
+  //     scrollTrigger: {
+  //       trigger: featureSection2,
+  //       start: "top 80%",
+  //       toggleActions: "play reverse play reverse",
+  //     },
+  //   });
+
+  //   gsap.to(item4, {
+  //     x: targetX4,
+  //     y: 205,
+  //     duration: 1,
+  //     ease: "sine.inOut",
+  //     scrollTrigger: {
+  //       trigger: featureSection2,
+  //       start: "top 70%",
+  //       toggleActions: "play reverse play reverse",
+  //     },
+  //   });
+  // }
+
+  // Scroll to spread card
+  window.addEventListener("load", () => {
+    const featureSection2 = document.querySelector(".feature-section2-inner");
+    if (featureSection2 && window.innerWidth >= 992) {
+      gsap.registerPlugin(ScrollTrigger);
+
+      const items = [
+        document.querySelector(".feature-box2.box1"),
+        document.querySelector(".feature-box2.box2"),
+        document.querySelector(".feature-box2.box3"),
+        document.querySelector(".feature-box2.box4"),
+      ];
+
+      if (items.every((item) => item)) {
+        const containerWidth = featureSection2.offsetWidth;
+        const containerHeight = featureSection2.offsetHeight;
+
+        const positions = items.map((item, index) => {
+          const itemWidth = item.offsetWidth;
+          const itemHeight = item.offsetHeight;
+          const centerX = containerWidth / 2 - itemWidth / 2;
+          const centerY = containerHeight / 2 - itemHeight / 2;
+
+          switch (index) {
+            case 0:
+              return { x: -centerX, y: -205 };
+            case 1:
+              return { x: -centerX * 0.35, y: 205 };
+            case 2:
+              return { x: centerX * 0.35, y: -205 };
+            case 3:
+              return { x: centerX, y: 205 };
+            default:
+              return { x: 0, y: 0 };
+          }
+        });
+
+        // Set initial position (center)
+        items.forEach((item) => {
+          gsap.set(item, { x: 0, y: 0 });
+        });
+
+        // Animate on scroll
+        items.forEach((item, index) => {
+          gsap.fromTo(
+            item,
+            { x: 0, y: 0 }, // from center
+            {
+              x: positions[index].x,
+              y: positions[index].y,
+              duration: 1,
+              ease: "sine.inOut",
+              scrollTrigger: {
+                trigger: featureSection2,
+                start: "top 80%",
+                toggleActions: "play reverse play reverse",
+              },
+            }
+          );
+        });
+      }
+    }
+  });
+
+  // *********************
 })(window.jQuery);

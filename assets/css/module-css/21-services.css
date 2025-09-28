@@ -614,6 +614,122 @@ Feature section start
 /* ---------------------------------
 Feature section end 
 ---------------------------------- */
+/* ---------------------------------
+Feature section2 start 
+---------------------------------- */
+.feature-section2 {
+  padding-bottom: 120px;
+}
+.feature-section2 .section-header {
+  max-width: 535px;
+}
+.feature-section2-inner {
+  position: relative;
+}
+.feature-box2 {
+  padding: 24px;
+  border-radius: 16px;
+  background-color: var(--white-color);
+  /* height: 100%; */
+  border: 1px solid var(--border-1);
+}
+.feature-box2-item:nth-child(odd) .feature-box2 {
+  background-color: var(--bg-10);
+  background-image: url(../../images/background/service-single-bg.png);
+  background-size: cover;
+}
+.feature-box2-item:nth-child(odd) .feature-box2 .icon-box {
+  background-color: var(--white-color);
+}
+.feature-box2 .top-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50%;
+  margin-bottom: 195px;
+}
+.feature-box2 .icon-box {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  background-color: var(--bg-10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.feature-box2 .number {
+  color: var(--white-color);
+  -webkit-text-stroke: 1px var(--border-2);
+  font-size: 60px;
+  font-weight: 500;
+  line-height: normal;
+}
+.feature-box2 .title {
+  color: var(--black-color);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.circle {
+  width: 500px;
+  height: 500px;
+  flex-shrink: 0;
+  border-radius: 500px;
+  border: 1px solid #ecedec;
+  padding: 49px;
+  margin: auto;
+}
+.circle-inner {
+  border: 1px solid #ecedec;
+  width: 100%;
+  height: 100%;
+  border-radius: 500px;
+}
+
+@media (min-width: 992px) {
+  .feature-section2-inner {
+    height: 854px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .feature-box2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 348px;
+  }
+}
+@media (max-width: 1199px) {
+  .feature-section2 {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 991px) {
+  .feature-section2 {
+    padding-bottom: 60px;
+  }
+  .feature-box2 {
+    height: 100%;
+  }
+  .feature-box2 .top-box {
+    margin-bottom: 80px;
+  }
+  .circle {
+    display: none;
+  }
+
+}
+
+/* ---------------------------------
+Feature section2 end 
+---------------------------------- */
 
 /* ---------------------------------
 Review Modal

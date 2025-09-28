@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="utf-8" />
     <title>Vibestay - Responsive HTML Template</title>
@@ -39,7 +39,7 @@
       <!-- preloader end -->
 
       <!-- header -->
-      <header class="main-header header-style-two">
+      <header class="main-header header-style-three">
         <!-- Header Lower -->
         <div class="header-lower">
           <div class="container">
@@ -250,60 +250,22 @@
                         </div>
                       </ul>
                     </div>
-                    <div class="signup-container">
-                      <div class="dropdown">
-                        <a class="btn-3" href="#">
-                          <div class="btn-wrapper">
-                            <div class="main-text btn-single">
-                              <i class="fa-solid fa-user"></i>
-                              <span class="d-none d-sm-block"
-                                >Log In / Sign Up</span
-                              >
-                            </div>
-                            <div class="hover-text btn-single">
-                              <i class="fa-solid fa-user"></i>
-                              <span class="d-none d-sm-block"
-                                >Log In / Sign Up</span
-                              >
-                            </div>
-                          </div>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <div class="signup-list">
-                            <ul>
-                              <li>
-                                <button
-                                  type="button"
-                                  class="btn"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#loginModal"
-                                >
-                                  Log In
-                                </button>
-                              </li>
-                              <li>
-                                <button
-                                  type="button"
-                                  class="btn"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#signinModal"
-                                >
-                                  Sign Up
-                                </button>
-                              </li>
-                              <li class="border"></li>
-                              <li>
-                                <a href="enter-home.html">Set your Home</a>
-                              </li>
-                              <li><a href="#0">Gift Card</a></li>
-                              <li>
-                                <a href="help-center.html">Help Center </a>
-                              </li>
-                            </ul>
-                          </div>
+                    <a class="btn-3 login-btn" href="#">
+                      <div class="btn-wrapper">
+                        <div class="main-text btn-single">
+                          <i class="fa-solid fa-user"></i>
+                          <span class="d-none d-sm-block"
+                            >Log In / Register</span
+                          >
+                        </div>
+                        <div class="hover-text btn-single">
+                          <i class="fa-solid fa-user"></i>
+                          <span class="d-none d-sm-block"
+                            >Log In / Register</span
+                          >
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -343,236 +305,6 @@
           </div>
         </div>
         <!-- sticky header -->
-
-        <!-- log in modal -->
-        <div
-          class="modal fade"
-          id="loginModal"
-          tabindex="-1"
-          aria-labelledby="loginModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="loginModalLabel">
-                  Log In or Sign Up book
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <div class="login-modal-container">
-                  <div class="login-modal-icon">
-                    <a href="index.html"
-                      ><img src="assets/images/favicon.png" alt="icon"
-                    /></a>
-                  </div>
-                  <h4>Welcome to VibeStay</h4>
-                  <div class="sign-in-form">
-                    <form>
-                      <div class="sign-in-form-name">
-                        <div class="sign-in-form-group">
-                          <input
-                            type="text"
-                            name="fname"
-                            class="sign-in-input"
-                            placeholder="First Name"
-                          />
-                        </div>
-                        <div class="sign-in-form-group">
-                          <input
-                            type="text"
-                            name="lname"
-                            class="sign-in-input"
-                            placeholder="Last Name"
-                          />
-                        </div>
-                      </div>
-                      <div class="sign-in-form-group register-form">
-                        <input
-                          type="text"
-                          id="telephone"
-                          class="sign-in-input"
-                          name="phone"
-                          placeholder="Phone..."
-                        />
-                      </div>
-                      <div class="sign-in-form-group">
-                        <input
-                          type="email"
-                          name="email"
-                          class="sign-in-input"
-                          placeholder="Enter your email..."
-                        />
-                      </div>
-                      <div class="sign-in-form-group">
-                        <div class="password-box">
-                          <input
-                            type="password"
-                            name="password"
-                            class="sign-in-input password"
-                            placeholder="Password..."
-                          />
-                          <i class="password-icon fa-regular fa-eye"></i>
-                        </div>
-                      </div>
-                      <div class="rember">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" />
-                          <label>Remember me</label>
-                        </div>
-                      </div>
-                      <div class="sign-in-btn">
-                        <button type="submit" class="btn-1">Sign Up</button>
-                      </div>
-                    </form>
-                    <div class="media-login">
-                      <div class="media-login-border"><h5>OR</h5></div>
-                      <ul>
-                        <li>
-                          <a href="#0"
-                            ><img
-                              src="assets/images/icons/facebook.png"
-                              alt="icon"
-                          /></a>
-                        </li>
-                        <li>
-                          <a href="#0"
-                            ><img
-                              src="assets/images/icons/google.png"
-                              alt="icon"
-                          /></a>
-                        </li>
-                        <li>
-                          <a href="#0"
-                            ><img
-                              src="assets/images/icons/apple.png"
-                              alt="icon"
-                          /></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- log in modal -->
-
-        <!-- sign in modal -->
-        <div
-          class="modal fade"
-          id="signinModal"
-          tabindex="-1"
-          aria-labelledby="signinModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="signinModalLabel">
-                  Sign In book
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <div class="signin-modal-container">
-                  <div class="login-modal-icon">
-                    <a href="index.html"
-                      ><img src="assets/images/favicon.png" alt="icon"
-                    /></a>
-                  </div>
-                  <h4>Welcome to VibeStay</h4>
-                  <div class="sign-in-form">
-                    <form>
-                      <div class="sign-in-form-group">
-                        <input
-                          type="email"
-                          name="email"
-                          class="sign-in-input"
-                          placeholder="Enter your email..."
-                        />
-                      </div>
-                      <div class="sign-in-form-name">
-                        <div class="sign-in-form-group">
-                          <label>Password</label>
-                          <div class="password-box">
-                            <input
-                              type="password"
-                              name="password"
-                              class="sign-in-input password"
-                              placeholder="Password..."
-                            />
-                            <i class="password-icon fa-regular fa-eye"></i>
-                          </div>
-                        </div>
-                        <div class="sign-in-form-group">
-                          <label>Confirm Password</label>
-                          <div class="password-box">
-                            <input
-                              type="password"
-                              name="password"
-                              class="sign-in-input password"
-                              placeholder="Confirm Password"
-                            />
-                            <i class="password-icon fa-regular fa-eye"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="rember">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" />
-                          <label>I agree with all the terms & conditions</label>
-                        </div>
-                      </div>
-                      <div class="sign-in-btn">
-                        <button type="submit" class="btn-1">Sign In</button>
-                      </div>
-                    </form>
-                    <div class="media-login">
-                      <div class="media-login-border"><h5>OR</h5></div>
-                      <ul>
-                        <li>
-                          <a href="#0"
-                            ><img
-                              src="assets/images/icons/facebook.png"
-                              alt="icon"
-                          /></a>
-                        </li>
-                        <li>
-                          <a href="#0"
-                            ><img
-                              src="assets/images/icons/google.png"
-                              alt="icon"
-                          /></a>
-                        </li>
-                        <li>
-                          <a href="#0"
-                            ><img
-                              src="assets/images/icons/apple.png"
-                              alt="icon"
-                          /></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- sign in modal -->
 
         <!-- mobile menu -->
         <div class="mobile-menu">
@@ -615,11 +347,1073 @@
       <!-- banner-section -->
       <section class="banner-section-three">
         <div class="container">
-          
+          <div class="top-box">
+            <div class="subtitle">Escape. Relax. Stay Vibe</div>
+            <h1 class="banner-section-three-title">LUXURY ESCAPES</h1>
+          </div>
+          <div class="middle-box">
+            <div class="middle-left-side">
+              <a
+                href="https://www.youtube.com/watch?v=4whbcUpfoN4"
+                data-fancybox
+                class="round-box-content"
+                aria-label="Play promotional video"
+              >
+                <span class="curved-circle">
+                  GET FREE GET FREE CONSULATION GET FREE CONSULATION
+                </span>
+                <div class="icon-box">
+                  <div class="icon-box-inner">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M3.52125 11.5843C3.52125 11.5843 2.61659 7.38435 7.85176 6.81452C7.85176 6.81452 7.23509 5.75858 4.70467 5.43604C4.70467 5.43604 7.08918 2.5201 11.0196 5.57734C12.8926 0.964989 16.416 2.29816 16.416 2.29816C14.3848 3.84176 14.3809 5.06588 14.3809 5.06588C19.1983 2.94171 20.5154 7.03032 20.5154 7.03032C17.4282 6.08112 14.6881 7.87046 14.6881 7.87046C21.9853 7.74759 19.4295 14.3758 19.4295 14.3758C16.0789 9.33189 12.2691 10.2404 12.2691 10.2404C12.2691 10.2404 8.51297 11.3578 8.1336 17.4024C8.1336 17.4024 2.60661 12.9398 8.98834 9.39716C8.98834 9.39716 5.71837 9.219 3.52125 11.5843Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M15.768 21.0108C15.7618 20.9509 15.7572 20.8926 15.7503 20.8342C15.639 19.991 15.4785 19.1539 15.2749 18.3291C14.6836 15.9431 13.706 13.6162 12.3682 11.5373C12.4394 11.5005 12.5125 11.4674 12.5871 11.4382C12.7211 11.4192 12.8564 11.4102 12.9918 11.4113C13.3336 11.4113 13.7774 11.4567 14.2881 11.6095C14.4609 11.8675 14.6391 12.1209 14.8027 12.382C15.2854 13.1466 15.7293 13.935 16.1328 14.7443C17.1148 16.7074 17.8292 18.7933 18.2569 20.9463C21.2643 21.1682 22.46 22.4776 22.46 24.0634H12.1839C12.1832 22.5897 13.2138 21.3572 15.768 21.0108Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a class="btn-2" href="#">
+                <div class="btn-wrapper">
+                  <div class="main-text btn-single">
+                    Explore More
+                    <div class="icon-box">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M1.85457 7.01898C1.85457 7.01898 1.26557 4.28448 4.67407 3.91348C4.67407 3.91348 4.27257 3.22598 2.62507 3.01598C2.62507 3.01598 4.17757 1.11748 6.73657 3.10798C7.95607 0.104985 10.2501 0.972985 10.2501 0.972985C8.92757 1.97798 8.92507 2.77498 8.92507 2.77498C12.0616 1.39198 12.9191 4.05398 12.9191 4.05398C10.9091 3.43598 9.12507 4.60098 9.12507 4.60098C13.8761 4.52098 12.2121 8.83648 12.2121 8.83648C10.0306 5.55248 7.55007 6.14398 7.55007 6.14398C7.55007 6.14398 5.10457 6.87148 4.85757 10.807C4.85757 10.807 1.25907 7.90148 5.41407 5.59498C5.41407 5.59498 3.28507 5.47898 1.85457 7.01898Z"
+                          fill="#F23F3F"
+                        />
+                        <path
+                          d="M9.82806 13.156C9.82406 13.117 9.82106 13.079 9.81656 13.041C9.74406 12.492 9.63956 11.947 9.50706 11.41C9.12206 9.8565 8.48556 8.3415 7.61456 6.988C7.6609 6.96403 7.70847 6.9425 7.75706 6.9235C7.84433 6.91114 7.93241 6.90529 8.02056 6.906C8.24306 6.906 8.53206 6.9355 8.86456 7.035C8.97706 7.203 9.09306 7.368 9.19956 7.538C9.51388 8.0358 9.80291 8.54912 10.0656 9.076C10.7049 10.3542 11.1701 11.7123 11.4486 13.114C13.4066 13.2585 14.1851 14.111 14.1851 15.1435H7.49456C7.49406 14.184 8.16506 13.3815 9.82806 13.156Z"
+                          fill="#F23F3F"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="hover-text btn-single">
+                    Explore More
+                    <div class="icon-box">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M1.85457 7.01898C1.85457 7.01898 1.26557 4.28448 4.67407 3.91348C4.67407 3.91348 4.27257 3.22598 2.62507 3.01598C2.62507 3.01598 4.17757 1.11748 6.73657 3.10798C7.95607 0.104985 10.2501 0.972985 10.2501 0.972985C8.92757 1.97798 8.92507 2.77498 8.92507 2.77498C12.0616 1.39198 12.9191 4.05398 12.9191 4.05398C10.9091 3.43598 9.12507 4.60098 9.12507 4.60098C13.8761 4.52098 12.2121 8.83648 12.2121 8.83648C10.0306 5.55248 7.55007 6.14398 7.55007 6.14398C7.55007 6.14398 5.10457 6.87148 4.85757 10.807C4.85757 10.807 1.25907 7.90148 5.41407 5.59498C5.41407 5.59498 3.28507 5.47898 1.85457 7.01898Z"
+                          fill="#F23F3F"
+                        />
+                        <path
+                          d="M9.82806 13.156C9.82406 13.117 9.82106 13.079 9.81656 13.041C9.74406 12.492 9.63956 11.947 9.50706 11.41C9.12206 9.8565 8.48556 8.3415 7.61456 6.988C7.6609 6.96403 7.70847 6.9425 7.75706 6.9235C7.84433 6.91114 7.93241 6.90529 8.02056 6.906C8.24306 6.906 8.53206 6.9355 8.86456 7.035C8.97706 7.203 9.09306 7.368 9.19956 7.538C9.51388 8.0358 9.80291 8.54912 10.0656 9.076C10.7049 10.3542 11.1701 11.7123 11.4486 13.114C13.4066 13.2585 14.1851 14.111 14.1851 15.1435H7.49456C7.49406 14.184 8.16506 13.3815 9.82806 13.156Z"
+                          fill="#F23F3F"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="middle-right-side">
+              <div class="swiper-container">
+                <div class="swiper banner-three-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="destination-box3">
+                        <div class="img-box">
+                          <img
+                            src="./assets/images/destination/destination-img-bg-3.1.png"
+                            alt=""
+                          />
+                          <a href="" class="destination-badge3">
+                            Explore Popular Destination
+                            <i class="fa-light fa-arrow-up-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="destination-box3">
+                        <div class="img-box">
+                          <img
+                            src="./assets/images/destination/destination-img-bg-3.1.png"
+                            alt=""
+                          />
+                          <a href="" class="destination-badge3">
+                            Explore Popular Destination
+                            <i class="fa-light fa-arrow-up-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="destination-box3">
+                        <div class="img-box">
+                          <img
+                            src="./assets/images/destination/destination-img-bg-3.1.png"
+                            alt=""
+                          />
+                          <a href="" class="destination-badge3">
+                            Explore Popular Destination
+                            <i class="fa-light fa-arrow-up-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="destination-box3">
+                        <div class="img-box">
+                          <img
+                            src="./assets/images/destination/destination-img-bg-3.1.png"
+                            alt=""
+                          />
+                          <a href="" class="destination-badge3">
+                            Explore Popular Destination
+                            <i class="fa-light fa-arrow-up-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="destination-search">
+            <div class="destination-search-inner">
+              <div class="location-search-box">
+                <div class="select-option">
+                  <div class="select-icon">
+                    <i class="fa-light fa-location-dot"></i>
+                  </div>
+                  <div class="select-option-content">
+                    <h6 class="select-option-title">Where</h6>
+                    <input
+                      type="search"
+                      class="soValue optionSearch"
+                      placeholder="Search destination"
+                    />
+                  </div>
+                </div>
+                <div class="location-search-dropdown">
+                  <ul class="search-options top-search-options">
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-light fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Nearby</h6>
+                        <p>Find what’s around you</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-light fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Bangladesh</h6>
+                        <p>Cox-Bazar, Kuakata, Sundorban</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-light fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Malayshia</h6>
+                        <p>Kuala Lumpur, Johor Bahru</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-light fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Thailand</h6>
+                        <p>Koh Phi, Khao Yai National Park</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-light fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Ecuador</h6>
+                        <p>Tiny home in San Juan</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-light fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">United States</h6>
+                        <p>Elk Creek Lodge</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-light fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Indonesia</h6>
+                        <p>Island in Pulau Seribu, Jakarta</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-light fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Philippines</h6>
+                        <p>Room in El Nido</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-light fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Maldives</h6>
+                        <p>Room in hotel in Maalhos</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="options-list-icon">
+                        <i class="fa-light fa-location-dot"></i>
+                      </div>
+                      <div class="options-list-inner">
+                        <h6 class="country">Spain</h6>
+                        <p>Entire apartment in Almuñécar</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="hr-line"></div>
+              <div class="date">
+                <div class="select-option">
+                  <div class="select-icon">
+                    <i class="fa-light fa-door-open"></i>
+                  </div>
+                  <div class="select-option-content">
+                    <h6 class="select-option-title">Check in/out</h6>
+                    <input
+                      type="text"
+                      id="date-picker"
+                      placeholder="12/12/2024 - 14/12/2024"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="hr-line"></div>
+              <div class="count">
+                <div class="count-counter select-option">
+                  <div class="select-icon">
+                    <i class="fa-light fa-user"></i>
+                  </div>
+                  <div class="select-option-content">
+                    <h6 class="select-option-title">Guests</h6>
+                    <div class="count-input">
+                      <div class="count-counter-inner">
+                        <span class="adult">0</span>
+                        <p>adult</p>
+                      </div>
+                      <div class="count-counter-inner">
+                        <span class="childeren">0</span>
+                        <p>childeren</p>
+                      </div>
+                      <div class="count-counter-inner">
+                        <span class="room">0</span>
+                        <p>pet</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="count-container">
+                  <div class="count-single">
+                    <div class="count-single-text">
+                      <h6>Adult</h6>
+                      <p>Over 12 Years</p>
+                    </div>
+                    <div class="count-single-inner">
+                      <button type="button" class="decrement">
+                        <i class="fa-regular fa-minus"></i>
+                      </button>
+                      <span class="adult">0</span>
+                      <button type="button" class="increment">
+                        <i class="fa-regular fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="count-single">
+                    <div class="count-single-text">
+                      <h6>Childeren</h6>
+                      <p>Below 12 Years</p>
+                    </div>
+                    <div class="count-single-inner">
+                      <button type="button" class="decrementTwo">
+                        <i class="fa-regular fa-minus"></i>
+                      </button>
+                      <span class="childeren">0</span>
+                      <button type="button" class="incrementTwo">
+                        <i class="fa-regular fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="count-single">
+                    <div class="count-single-text">
+                      <h6>Pet</h6>
+                    </div>
+                    <div class="count-single-inner">
+                      <button type="button" class="decrementThree">
+                        <i class="fa-regular fa-minus"></i>
+                      </button>
+                      <span class="room">0</span>
+                      <button type="button" class="incrementThree">
+                        <i class="fa-regular fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="btn-1">
+                <div class="btn-wrapper">
+                  <div class="main-text btn-single">
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                    <span class="d-md-none d-xl-block">Search</span>
+                  </div>
+                  <div class="hover-text btn-single">
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                    <span class="d-md-none d-xl-block">Search</span>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
+        <video
+          class="banner-section-three-video"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
+          <source
+            class="banner-section-three-video-source"
+            src="./assets/video/6079568_Turquoise_Sea_1920x1080.mp4"
+            type="video/mp4"
+          />
+        </video>
       </section>
       <!-- banner-section -->
 
+      <!-- Top rated destination section start -->
+      <section class="top-rated-destination-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="left-side">
+              <h2 class="section-title split-text">
+                Top-Rated Rentals in Vibestay
+              </h2>
+            </div>
+            <div class="right-side split-text">
+              Trusted for more than 20years, It helps like you make extra income
+              and welcome wonderful guest. Start your story with us today.
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 destination-box4-item">
+              <div class="destination-box4">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/destination/destination-img-4.1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="text-box">
+                  <div class="title">
+                    Chongqing city modern architecture landscape skyline
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 destination-box4-item">
+              <div class="destination-box4">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/destination/destination-img-4.2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="text-box">
+                  <div class="title">
+                    Chongqing city modern architecture landscape skyline
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 destination-box4-item">
+              <div class="destination-box4">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/destination/destination-img-4.3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="text-box">
+                  <div class="title">
+                    Chongqing city modern architecture landscape skyline
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 destination-box4-item">
+              <div class="destination-box4">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/destination/destination-img-4.4.png"
+                    alt=""
+                  />
+                </div>
+                <div class="text-box">
+                  <div class="title">
+                    Chongqing city modern architecture landscape skyline
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="special-text">
+            <svg
+              fill="none"
+              viewBox="0 0 1496 127"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="m47.663 125.19-47.663-122.46h34.068l20.94 66.766 20.941-66.766h34.067l-47.663 122.46h-14.69z"
+                fill="url(#n)"
+              />
+              <path
+                d="m47.663 125.19-47.663-122.46h34.068l20.94 66.766 20.941-66.766h34.067l-47.663 122.46h-14.69z"
+                fill="#fff"
+                fill-opacity=".2"
+              />
+              <path
+                d="m99.077 124.28 47.507-123.37h14.69l47.507 123.37h-34.068l-20.784-68.58-20.785 68.58h-34.067zm23.597-18.143v-25.4h59.54v25.4h-59.54z"
+                fill="url(#i)"
+              />
+              <path
+                d="m99.077 124.28 47.507-123.37h14.69l47.507 123.37h-34.068l-20.784-68.58-20.785 68.58h-34.067zm23.597-18.143v-25.4h59.54v25.4h-59.54z"
+                fill="#fff"
+                fill-opacity=".2"
+              />
+              <path
+                d="m265.04 127c-7.085 0-13.961-1.391-20.628-4.173-6.564-2.903-12.502-7.076-17.815-12.518-5.209-5.443-9.377-12.096-12.502-19.958-3.021-7.8619-4.532-16.812-4.532-26.851s1.511-18.99 4.532-26.851c3.125-7.8619 7.293-14.514 12.502-19.957 5.313-5.4428 11.251-9.5552 17.815-12.337 6.667-2.9029 13.543-4.3543 20.628-4.3543 5.521 0 10.626 0.90714 15.315 2.7214 4.688 1.8143 8.803 4.4752 12.345 7.9829v32.839c-2.709-2.661-5.365-4.8381-7.97-6.5315-2.5-1.6933-5.209-2.9633-8.126-3.81-2.917-0.9676-6.407-1.4514-10.47-1.4514-4.689 0-9.064 1.3909-13.127 4.1729-3.959 2.7819-7.189 6.5919-9.689 11.43-2.501 4.7171-3.751 10.1-3.751 16.147s1.25 11.49 3.751 16.329c2.5 4.7171 5.73 8.4666 9.689 11.248 4.063 2.7819 8.438 4.1729 13.127 4.1729 6.042 0 10.939-0.9676 14.689-2.9029 3.751-2.0562 7.71-5.0195 11.877-8.89v32.839c-3.542 3.507-7.657 6.168-12.345 7.983-4.689 1.814-9.794 2.721-15.315 2.721z"
+                fill="url(#h)"
+              />
+              <path
+                d="m265.04 127c-7.085 0-13.961-1.391-20.628-4.173-6.564-2.903-12.502-7.076-17.815-12.518-5.209-5.443-9.377-12.096-12.502-19.958-3.021-7.8619-4.532-16.812-4.532-26.851s1.511-18.99 4.532-26.851c3.125-7.8619 7.293-14.514 12.502-19.957 5.313-5.4428 11.251-9.5552 17.815-12.337 6.667-2.9029 13.543-4.3543 20.628-4.3543 5.521 0 10.626 0.90714 15.315 2.7214 4.688 1.8143 8.803 4.4752 12.345 7.9829v32.839c-2.709-2.661-5.365-4.8381-7.97-6.5315-2.5-1.6933-5.209-2.9633-8.126-3.81-2.917-0.9676-6.407-1.4514-10.47-1.4514-4.689 0-9.064 1.3909-13.127 4.1729-3.959 2.7819-7.189 6.5919-9.689 11.43-2.501 4.7171-3.751 10.1-3.751 16.147s1.25 11.49 3.751 16.329c2.5 4.7171 5.73 8.4666 9.689 11.248 4.063 2.7819 8.438 4.1729 13.127 4.1729 6.042 0 10.939-0.9676 14.689-2.9029 3.751-2.0562 7.71-5.0195 11.877-8.89v32.839c-3.542 3.507-7.657 6.168-12.345 7.983-4.689 1.814-9.794 2.721-15.315 2.721z"
+                fill="#fff"
+                fill-opacity=".2"
+              />
+              <path
+                d="m301.29 124.28 47.507-123.37h14.69l47.507 123.37h-34.068l-20.784-68.58-20.784 68.58h-34.068zm23.597-18.143v-25.4h59.54v25.4h-59.54z"
+                fill="url(#g)"
+              />
+              <path
+                d="m301.29 124.28 47.507-123.37h14.69l47.507 123.37h-34.068l-20.784-68.58-20.784 68.58h-34.068zm23.597-18.143v-25.4h59.54v25.4h-59.54z"
+                fill="#fff"
+                fill-opacity=".2"
+              />
+              <path
+                d="m436.31 124.28v-121.56h29.223v121.56h-29.223zm-28.442-93.436v-28.121h86.106v28.121h-86.106z"
+                fill="url(#f)"
+              />
+              <path
+                d="m436.31 124.28v-121.56h29.223v121.56h-29.223zm-28.442-93.436v-28.121h86.106v28.121h-86.106z"
+                fill="#fff"
+                fill-opacity=".2"
+              />
+              <path
+                d="m529.61 124.28v-121.56h29.223v121.56h-29.223zm-19.222 0v-28.122h67.666v28.122h-67.666zm0-93.436v-28.121h67.666v28.121h-67.666z"
+                fill="url(#e)"
+              />
+              <path
+                d="m529.61 124.28v-121.56h29.223v121.56h-29.223zm-19.222 0v-28.122h67.666v28.122h-67.666zm0-93.436v-28.121h67.666v28.121h-67.666z"
+                fill="#fff"
+                fill-opacity=".2"
+              />
+              <path
+                d="m649.63 127c-7.084 0-13.908-1.391-20.471-4.173-6.46-2.903-12.242-7.076-17.347-12.518-5.105-5.443-9.168-12.096-12.189-19.958-2.917-7.8619-4.376-16.812-4.376-26.851s1.459-18.99 4.376-26.851c3.021-7.8619 7.084-14.514 12.189-19.957 5.105-5.4428 10.887-9.5552 17.347-12.337 6.563-2.9029 13.387-4.3543 20.471-4.3543 7.085 0 13.856 1.4514 20.316 4.3543 6.563 2.7819 12.397 6.8943 17.502 12.337 5.105 5.4429 9.116 12.095 12.033 19.957 3.022 7.8619 4.532 16.812 4.532 26.851s-1.51 18.99-4.532 26.851c-2.917 7.8619-6.928 14.515-12.033 19.958-5.105 5.442-10.939 9.615-17.502 12.518-6.46 2.782-13.231 4.173-20.316 4.173zm0-31.75c4.688 0 8.856-1.391 12.502-4.1729 3.751-2.7819 6.668-6.5314 8.751-11.248 2.084-4.8381 3.126-10.281 3.126-16.329s-1.042-11.43-3.126-16.147c-2.083-4.8381-5-8.6481-8.751-11.43-3.646-2.782-7.814-4.1729-12.502-4.1729s-8.855 1.3909-12.502 4.1729c-3.646 2.7819-6.563 6.5919-8.751 11.43-2.083 4.7171-3.125 10.1-3.125 16.147s1.042 11.49 3.125 16.329c2.188 4.7171 5.105 8.4666 8.751 11.248 3.647 2.7819 7.814 4.1729 12.502 4.1729z"
+                fill="url(#d)"
+              />
+              <path
+                d="m649.63 127c-7.084 0-13.908-1.391-20.471-4.173-6.46-2.903-12.242-7.076-17.347-12.518-5.105-5.443-9.168-12.096-12.189-19.958-2.917-7.8619-4.376-16.812-4.376-26.851s1.459-18.99 4.376-26.851c3.021-7.8619 7.084-14.514 12.189-19.957 5.105-5.4428 10.887-9.5552 17.347-12.337 6.563-2.9029 13.387-4.3543 20.471-4.3543 7.085 0 13.856 1.4514 20.316 4.3543 6.563 2.7819 12.397 6.8943 17.502 12.337 5.105 5.4429 9.116 12.095 12.033 19.957 3.022 7.8619 4.532 16.812 4.532 26.851s-1.51 18.99-4.532 26.851c-2.917 7.8619-6.928 14.515-12.033 19.958-5.105 5.442-10.939 9.615-17.502 12.518-6.46 2.782-13.231 4.173-20.316 4.173zm0-31.75c4.688 0 8.856-1.391 12.502-4.1729 3.751-2.7819 6.668-6.5314 8.751-11.248 2.084-4.8381 3.126-10.281 3.126-16.329s-1.042-11.43-3.126-16.147c-2.083-4.8381-5-8.6481-8.751-11.43-3.646-2.782-7.814-4.1729-12.502-4.1729s-8.855 1.3909-12.502 4.1729c-3.646 2.7819-6.563 6.5919-8.751 11.43-2.083 4.7171-3.125 10.1-3.125 16.147s1.042 11.49 3.125 16.329c2.188 4.7171 5.105 8.4666 8.751 11.248 3.647 2.7819 7.814 4.1729 12.502 4.1729z"
+                fill="#fff"
+                fill-opacity=".2"
+              />
+              <path
+                d="m808.09 126.09-56.102-59.69v57.876h-29.223v-123.37h10.314l56.102 60.779v-58.964h29.223v123.37h-10.314z"
+                fill="url(#c)"
+              />
+              <path
+                d="m808.09 126.09-56.102-59.69v57.876h-29.223v-123.37h10.314l56.102 60.779v-58.964h29.223v123.37h-10.314z"
+                fill="#fff"
+                fill-opacity=".2"
+              />
+              <path
+                d="m890.29 124.28v-121.56h44.851c5.313 0 10.47 0.84666 15.471 2.54 5.105 1.6933 9.689 4.2938 13.752 7.8015 4.063 3.5076 7.293 7.9223 9.689 13.244 2.5 5.3219 3.75 11.551 3.75 18.687 0 7.499-1.562 13.849-4.688 19.05-3.125 5.08-7.345 8.9505-12.658 11.611-5.209 2.54-11.043 3.81-17.503 3.81-1.354 0-3.281-0.3024-5.782-0.9071-2.5-0.6048-5.157-1.27-7.97-1.9957-2.813-0.8467-5.417-1.6329-7.813-2.3586s-4.168-1.2095-5.314-1.4514v-17.236c2.084 1.0886 4.428 2.0562 7.033 2.9029 2.708 0.8467 5.573 1.27 8.595 1.27 4.584 0 8.386-1.3305 11.408-3.9914 3.125-2.7819 4.688-6.35 4.688-10.704 0-4.9591-1.563-8.5272-4.688-10.704-3.022-2.2981-6.824-3.4471-11.408-3.4471h-12.19v93.436h-29.223zm57.196 0-29.848-51.526 26.254-8.89 39.225 60.416h-35.631z"
+                fill="url(#b)"
+              />
+              <path
+                d="m890.29 124.28v-121.56h44.851c5.313 0 10.47 0.84666 15.471 2.54 5.105 1.6933 9.689 4.2938 13.752 7.8015 4.063 3.5076 7.293 7.9223 9.689 13.244 2.5 5.3219 3.75 11.551 3.75 18.687 0 7.499-1.562 13.849-4.688 19.05-3.125 5.08-7.345 8.9505-12.658 11.611-5.209 2.54-11.043 3.81-17.503 3.81-1.354 0-3.281-0.3024-5.782-0.9071-2.5-0.6048-5.157-1.27-7.97-1.9957-2.813-0.8467-5.417-1.6329-7.813-2.3586s-4.168-1.2095-5.314-1.4514v-17.236c2.084 1.0886 4.428 2.0562 7.033 2.9029 2.708 0.8467 5.573 1.27 8.595 1.27 4.584 0 8.386-1.3305 11.408-3.9914 3.125-2.7819 4.688-6.35 4.688-10.704 0-4.9591-1.563-8.5272-4.688-10.704-3.022-2.2981-6.824-3.4471-11.408-3.4471h-12.19v93.436h-29.223zm57.196 0-29.848-51.526 26.254-8.89 39.225 60.416h-35.631z"
+                fill="#fff"
+                fill-opacity=".2"
+              />
+              <path
+                d="m997.96 124.28v-121.56h77.202v28.121h-47.98v64.407h47.98v29.029h-77.202zm16.412-47.898v-27.214h55.47v27.214h-55.47z"
+                fill="url(#a)"
+              />
+              <path
+                d="m997.96 124.28v-121.56h77.202v28.121h-47.98v64.407h47.98v29.029h-77.202zm16.412-47.898v-27.214h55.47v27.214h-55.47z"
+                fill="#fff"
+                fill-opacity=".2"
+              />
+              <path
+                d="m1183.9 126.09-56.1-59.69v57.876h-29.22v-123.37h10.31l56.1 60.779v-58.964h29.23v123.37h-10.32z"
+                fill="url(#m)"
+              />
+              <path
+                d="m1183.9 126.09-56.1-59.69v57.876h-29.22v-123.37h10.31l56.1 60.779v-58.964h29.23v123.37h-10.32z"
+                fill="#fff"
+                fill-opacity=".2"
+              />
+              <path
+                d="m1240.6 124.28v-121.56h29.22v121.56h-29.22zm-28.44-93.436v-28.121h86.1v28.121h-86.1z"
+                fill="url(#l)"
+              />
+              <path
+                d="m1240.6 124.28v-121.56h29.22v121.56h-29.22zm-28.44-93.436v-28.121h86.1v28.121h-86.1z"
+                fill="#fff"
+                fill-opacity=".2"
+              />
+              <path
+                d="m1296.8 124.28 47.51-123.37h14.69l47.51 123.37h-34.07l-20.79-68.58-20.78 68.58h-34.07zm23.6-18.143v-25.4h59.54v25.4h-59.54z"
+                fill="url(#k)"
+              />
+              <path
+                d="m1296.8 124.28 47.51-123.37h14.69l47.51 123.37h-34.07l-20.79-68.58-20.78 68.58h-34.07zm23.6-18.143v-25.4h59.54v25.4h-59.54z"
+                fill="#fff"
+                fill-opacity=".2"
+              />
+              <path
+                d="m1421.3 124.28v-121.56h29.22v91.621h45.48v29.936h-74.7z"
+                fill="url(#j)"
+              />
+              <path
+                d="m1421.3 124.28v-121.56h29.22v91.621h45.48v29.936h-74.7z"
+                fill="#fff"
+                fill-opacity=".2"
+              />
+              <defs>
+                <pattern
+                  id="n"
+                  width="1"
+                  height="1"
+                  patternContentUnits="objectBoundingBox"
+                >
+                  <use
+                    transform="matrix(.00052083 0 0 .0061352 0 -2.813)"
+                    xlink:href="#image0_5040_297"
+                  />
+                </pattern>
+                <pattern
+                  id="i"
+                  width="1"
+                  height="1"
+                  patternContentUnits="objectBoundingBox"
+                >
+                  <use
+                    transform="matrix(.00052083 0 0 .0061352 0 -2.813)"
+                    xlink:href="#image0_5040_297"
+                  />
+                </pattern>
+                <pattern
+                  id="h"
+                  width="1"
+                  height="1"
+                  patternContentUnits="objectBoundingBox"
+                >
+                  <use
+                    transform="matrix(.00052083 0 0 .0061352 0 -2.813)"
+                    xlink:href="#image0_5040_297"
+                  />
+                </pattern>
+                <pattern
+                  id="g"
+                  width="1"
+                  height="1"
+                  patternContentUnits="objectBoundingBox"
+                >
+                  <use
+                    transform="matrix(.00052083 0 0 .0061352 0 -2.813)"
+                    xlink:href="#image0_5040_297"
+                  />
+                </pattern>
+                <pattern
+                  id="f"
+                  width="1"
+                  height="1"
+                  patternContentUnits="objectBoundingBox"
+                >
+                  <use
+                    transform="matrix(.00052083 0 0 .0061352 0 -2.813)"
+                    xlink:href="#image0_5040_297"
+                  />
+                </pattern>
+                <pattern
+                  id="e"
+                  width="1"
+                  height="1"
+                  patternContentUnits="objectBoundingBox"
+                >
+                  <use
+                    transform="matrix(.00052083 0 0 .0061352 0 -2.813)"
+                    xlink:href="#image0_5040_297"
+                  />
+                </pattern>
+                <pattern
+                  id="d"
+                  width="1"
+                  height="1"
+                  patternContentUnits="objectBoundingBox"
+                >
+                  <use
+                    transform="matrix(.00052083 0 0 .0061352 0 -2.813)"
+                    xlink:href="#image0_5040_297"
+                  />
+                </pattern>
+                <pattern
+                  id="c"
+                  width="1"
+                  height="1"
+                  patternContentUnits="objectBoundingBox"
+                >
+                  <use
+                    transform="matrix(.00052083 0 0 .0061352 0 -2.813)"
+                    xlink:href="#image0_5040_297"
+                  />
+                </pattern>
+                <pattern
+                  id="b"
+                  width="1"
+                  height="1"
+                  patternContentUnits="objectBoundingBox"
+                >
+                  <use
+                    transform="matrix(.00052083 0 0 .0061352 0 -2.813)"
+                    xlink:href="#image0_5040_297"
+                  />
+                </pattern>
+                <pattern
+                  id="a"
+                  width="1"
+                  height="1"
+                  patternContentUnits="objectBoundingBox"
+                >
+                  <use
+                    transform="matrix(.00052083 0 0 .0061352 0 -2.813)"
+                    xlink:href="#image0_5040_297"
+                  />
+                </pattern>
+                <pattern
+                  id="m"
+                  width="1"
+                  height="1"
+                  patternContentUnits="objectBoundingBox"
+                >
+                  <use
+                    transform="matrix(.00052083 0 0 .0061352 0 -2.813)"
+                    xlink:href="#image0_5040_297"
+                  />
+                </pattern>
+                <pattern
+                  id="l"
+                  width="1"
+                  height="1"
+                  patternContentUnits="objectBoundingBox"
+                >
+                  <use
+                    transform="matrix(.00052083 0 0 .0061352 0 -2.813)"
+                    xlink:href="#image0_5040_297"
+                  />
+                </pattern>
+                <pattern
+                  id="k"
+                  width="1"
+                  height="1"
+                  patternContentUnits="objectBoundingBox"
+                >
+                  <use
+                    transform="matrix(.00052083 0 0 .0061352 0 -2.813)"
+                    xlink:href="#image0_5040_297"
+                  />
+                </pattern>
+                <pattern
+                  id="j"
+                  width="1"
+                  height="1"
+                  patternContentUnits="objectBoundingBox"
+                >
+                  <use
+                    transform="matrix(.00052083 0 0 .0061352 0 -2.813)"
+                    xlink:href="#image0_5040_297"
+                  />
+                </pattern>
+              </defs>
+            </svg>
+          </div>
+        </div>
+
+        <video
+          class="top-rated-destination-video"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
+          <source
+            class="top-rated-destination-video-source"
+            src="./assets/video/destination-video.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </section>
+      <!-- Top rated destination section end -->
+
+      <!-- Category section start -->
+      <section class="category-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="left-side">
+              <h2 class="section-title split-text">Trending Escapes</h2>
+            </div>
+            <div class="right-side split-text">
+              Proven Success StoriesTrusted by 50,000+ hosts who've transformed
+              properties into profits.Start earning while sharing your passion
+              for hospitality.
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="category-box">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/destination/destination-img-5.1.png"
+                    alt="destination-img-5"
+                  />
+                </div>
+                <div class="text-box">
+                  <div class="title">Cottages</div>
+                  <a href="" class="btn-4"
+                    >Read More <i class="fa-regular fa-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="category-box">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/destination/destination-img-5.2.png"
+                    alt="destination-img-5"
+                  />
+                </div>
+                <div class="text-box">
+                  <div class="title">Hotels</div>
+                  <a href="" class="btn-4"
+                    >Read More <i class="fa-regular fa-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="category-box">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/destination/destination-img-5.3.png"
+                    alt="destination-img-5"
+                  />
+                </div>
+                <div class="text-box">
+                  <div class="title">Houses</div>
+                  <a href="" class="btn-4"
+                    >Read More <i class="fa-regular fa-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="category-box">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/destination/destination-img-5.4.png"
+                    alt="destination-img-5"
+                  />
+                </div>
+                <div class="text-box">
+                  <div class="title">Cabins</div>
+                  <a href="" class="btn-4"
+                    >Read More <i class="fa-regular fa-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Category section end -->
+
+      <!-- Feature section2 start -->
+      <section class="feature-section2">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title split-text">Discover the Difference</h2>
+          </div>
+          <div class="feature-section2-inner">
+            <div class="row g-4">
+              <div class="col-lg-3 col-sm-6 feature-box2-item">
+                <div class="feature-box2 box1">
+                  <div class="top-box">
+                    <div class="icon-box">
+                      <img src="./assets/images/icons/service-1.png" alt="" />
+                    </div>
+                    <div class="number">01</div>
+                  </div>
+                  <div class="bottom-box">
+                    <a href="" class="title">Full privacy of home</a>
+                    <p>
+                      Enjoy full facilities like kitchen,laundry pools,yards and
+                      more
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 feature-box2-item">
+                <div class="feature-box2 box2">
+                  <div class="top-box">
+                    <div class="icon-box">
+                      <img src="./assets/images/icons/service-2.png" alt="" />
+                    </div>
+                    <div class="number">02</div>
+                  </div>
+                  <div class="bottom-box">
+                    <a href="" class="title">Peach of mind</a>
+                    <p>
+                      Our book with confidence guarantee gives you 24/7 support
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 feature-box2-item">
+                <div class="feature-box2 box3">
+                  <div class="top-box">
+                    <div class="icon-box">
+                      <img src="./assets/images/icons/service-3.png" alt="" />
+                    </div>
+                    <div class="number">03</div>
+                  </div>
+                  <div class="bottom-box">
+                    <a href="" class="title">Best Pricing ever</a>
+                    <p>More value added with less amount for every customers</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 feature-box2-item">
+                <div class="feature-box2 box4">
+                  <div class="top-box">
+                    <div class="icon-box">
+                      <img src="./assets/images/icons/service-4.png" alt="" />
+                    </div>
+                    <div class="number">04</div>
+                  </div>
+                  <div class="bottom-box">
+                    <a href="" class="title">Place for everyone</a>
+                    <p>
+                      From booking to staying, the whole process is simple and
+                      enjoyable
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="circle">
+              <div class="circle-inner"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Feature section2 end -->
+
+      <!-- Popular amenities section start -->
+      <section class="popular-amenities-seciton">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title split-text">Popular Amenities Offered</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="amenities-box">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/amenities/amenities-icon.png"
+                    alt="amenities-icon"
+                  />
+                </div>
+                <div class="text-box">
+                  <div class="title">Dedicated Workspace</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="amenities-box">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/amenities/amenities-icon2.png"
+                    alt="amenities-icon"
+                  />
+                </div>
+                <div class="text-box">
+                  <div class="title">Air Conditioner</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="amenities-box">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/amenities/amenities-icon3.png"
+                    alt="amenities-icon"
+                  />
+                </div>
+                <div class="text-box">
+                  <div class="title">Paid Parking on Premises</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="amenities-box">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/amenities/amenities-icon4.png"
+                    alt="amenities-icon"
+                  />
+                </div>
+                <div class="text-box">
+                  <div class="title">Free parking on premises</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Popular amenities section end -->
+
+      <!-- private -->
+      <section class="private private-two-section">
+        <div class="container">
+          <div class="private-container">
+            <div class="row g-4">
+              <div class="col-lg-3">
+                <div class="common-title">
+                  <h3 class="split-text">
+                    Find private stays that work for you
+                  </h3>
+                  <p class="mb-0 mt-4 split-text">
+                    Bringing everyone from grandma to baby? Furry friends too?
+                    Explore vacation rentals that suit your ever need.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <div class="private-slider">
+                  <div class="swiper-container">
+                    <div class="swiper three-item-carousel">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="private-single">
+                            <a href="#0" class="privet-image">
+                              <img
+                                src="assets/images/resource/privet-1.jpg"
+                                alt="image"
+                              />
+                            </a>
+                            <div class="private-content">
+                              <a href="#0">Near the beach</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="private-single">
+                            <a href="#0" class="privet-image">
+                              <img
+                                src="assets/images/resource/privet-2.jpg"
+                                alt="image"
+                              />
+                            </a>
+                            <div class="private-content">
+                              <a href="#0">Swimming pool</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="private-single">
+                            <a href="#0" class="privet-image">
+                              <img
+                                src="assets/images/resource/privet-1.jpg"
+                                alt="image"
+                              />
+                            </a>
+                            <div class="private-content">
+                              <a href="#0">Retreat Nestled on Lake </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next3">
+                    <i class="fa-duotone fa-light fa-arrow-right"></i>
+                  </div>
+                  <div class="swiper-button-prev3">
+                    <i class="fa-duotone fa-light fa-arrow-left"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- private -->
 
       <!-- footer -->
       <footer id="footer" class="main-footer footer-one">
@@ -1031,6 +1825,9 @@
     <script src="assets/js/moment.min.js"></script>
     <script src="assets/js/daterangepicker.min.js"></script>
     <script src="assets/js/fancybox.umd.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/scrollTrigger.min.js"></script>
+    <script src="assets/js/splitText.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

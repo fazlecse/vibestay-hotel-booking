@@ -1,907 +1,1547 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Vibestay - Responsive HTML Template</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>Vibestay - Responsive HTML Template</title>
 
-<!-- Stylesheets -->
-<link href="assets/css/style.css" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-<!-- <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon"> -->
-<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon"> -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <div class="page-wrapper">
-
-        <!-- preloader -->
-        <div class="loader-wrap">
-            <div class="preloader">
-                <div class="preloader-close">x</div>
-                <div id="handle-preloader" class="handle-preloader">
-                    <div class="animation-preloader">
-                        <div class="loader-image">
-                            <img src="assets/images/loader.gif" alt="loader">
-                        </div>
-                        <div class="txt-loading">
-                            <span data-text-preloader="v" class="letters-loading">v</span>
-                            <span data-text-preloader="i" class="letters-loading">i</span>
-                            <span data-text-preloader="b" class="letters-loading">b</span>
-                            <span data-text-preloader="e" class="letters-loading">e</span>
-                            <span data-text-preloader="s" class="letters-loading">s</span>
-                            <span data-text-preloader="t" class="letters-loading">t</span>
-                            <span data-text-preloader="a" class="letters-loading">a</span>
-                            <span data-text-preloader="y" class="letters-loading">y</span>
-                        </div>
-                    </div>  
-                </div>
+      <!-- preloader -->
+      <div class="loader-wrap">
+        <div class="preloader">
+          <div class="preloader-close">x</div>
+          <div id="handle-preloader" class="handle-preloader">
+            <div class="animation-preloader">
+              <div class="loader-image">
+                <img src="assets/images/loader.gif" alt="loader" />
+              </div>
+              <div class="txt-loading">
+                <span data-text-preloader="v" class="letters-loading">v</span>
+                <span data-text-preloader="i" class="letters-loading">i</span>
+                <span data-text-preloader="b" class="letters-loading">b</span>
+                <span data-text-preloader="e" class="letters-loading">e</span>
+                <span data-text-preloader="s" class="letters-loading">s</span>
+                <span data-text-preloader="t" class="letters-loading">t</span>
+                <span data-text-preloader="a" class="letters-loading">a</span>
+                <span data-text-preloader="y" class="letters-loading">y</span>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- preloader end --> 
+      </div>
+      <!-- preloader end -->
 
-        <!-- header -->
-        <header class="main-header header-style-one">
-
-            <!-- Header Lower -->
-            <div class="header-lower">
-                <div class="container">
-                    <div class="inner-container d-flex align-items-center justify-content-between">        
-                        <div class="header-left-column">
-                            <div class="logo-box">
-                                <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="logo"></a></div>
-                            </div>
-                        </div>
-                        <div class="header-right-column d-flex  align-items-center">
-                            <div class="nav-outer">
-                                <div class="mobile-nav-toggler"><img src="assets/images/icons/icon-bar.png" alt="icon"></div>
-                                <nav class="main-menu navbar-expand-md navbar-light">
-                                    <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                        <ul class="navigation">
-                                            <li class="dropdown"><a href="javascript:void(0);">Home</a>
-                                                <ul>
-                                                    <li><a href="index.html">Home 01</a></li>
-                                                    <li><a href="index-2.html">Home 02</a></li>
-                                                    <li><a href="index-3.html">Home 03</a></li>
-                                                </ul>
-                                            </li> 
-                                            <li class="dropdown"><a href="javascript:void(0);">Trip boards</a>
-                                                <ul>
-                                                    <li><a href="about.html">About Us</a></li>
-                                                    <li><a href="service-1.html">Service </a></li>
-                                                    <li><a href="services-details.html">Service Details</a></li>
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                    <li><a href="error.html" class="active">404</a></li>
-                                                </ul>
-                                            </li>      
-                                            <li><a href="contact.html">Contact Us</a></li>                                                         
-                                            <li><a href="add-home.html">Add your home</a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                            <div class="header-right-btn-area">
-                                <div class="header-language">
-                                    <div class="language-box-wrapper">
-                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                            <i class="fa-light fa-globe"></i>
-                                            <i class="fa-thin fa-angle-down"></i>
-                                        </button>
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Choose a language and region</h1>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="region-container">
-                                                            <div class="row">
-                                                                <div class="col-lg-3 col-md-3">
-                                                                    <div class="region-box">
-                                                                        <h5 class="mb-15">Europe</h5>
-                                                                        <div class="region-list">
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/bg.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Български</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/cz.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Čeština</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/dk.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Dansk</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/de.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Deutsch</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/ee.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Eesti</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/es.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Español</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/fr.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Français</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/gr.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Ελληνικα</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/hr.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Hrvatski</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/it.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Italiano</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/bg.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Български</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/cz.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Čeština</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/dk.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Dansk</span>
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-3 col-md-3">
-                                                                    <div class="region-box">
-                                                                        <h5 class="mb-15">Asia</h5>
-                                                                        <div class="region-list">
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/cn.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">简体中文</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/ph.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Tagalog</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/vn.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Tiếng Việt</span>
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="region-box">
-                                                                        <h5 class="mb-15">Africa</h5>
-                                                                        <div class="region-list">
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/cn.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">简体中文</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/ph.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Tagalog</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/vn.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Tiếng Việt</span>
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-3 col-md-3">
-                                                                    <div class="region-box">
-                                                                        <h5 class="mt-20 mb-15">Middle East</h5>
-                                                                        <div class="region-list">
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/sa.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">العربية</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/gr.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Ελληνικα</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/hr.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Hrvatski</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/it.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Italiano</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/es.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Español</span>
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-3 col-md-3">
-                                                                    <div class="region-box">
-                                                                        <h5 class="mt-20 mb-15">America</h5>
-                                                                        <div class="region-list">
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/us.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">English</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/br.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Português</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/de.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Deutsch</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/ee.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Eesti</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/es.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Español</span>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a href="#0" class="item">
-                                                                                <img src="assets/images/mini-flag/fr.svg" alt="flag">
-                                                                                <div class="country-name-content">
-                                                                                    <span class="country-name">Country Name</span>
-                                                                                    <span class="language-name">Français</span>
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="signup-container">
-                                    <div class="dropdown">
-                                        <button class="cmn-dropdown-toggle btn-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="fa-solid fa-user"></i> <span>Log In / Sign Up</span>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-end">
-                                            <div class="signup-list">
-                                                <ul>
-                                                    <li>
-                                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal">
-                                                            Log In
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#signinModal">
-                                                            Sign Up
-                                                        </button>
-                                                    </li>
-                                                    <li class="border"></li>
-                                                    <li><a href="enter-home.html">Set your Home</a></li>
-                                                    <li><a href="#0">Gift Card</a></li>
-                                                    <li><a href="help-center.html">Help Center </a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>                          
-                            </div>
-                        </div>
-                    </div>
+      <!-- header -->
+      <header class="main-header header-style-one">
+        <!-- Header Lower -->
+        <div class="header-lower">
+          <div class="container">
+            <div
+              class="inner-container d-flex align-items-center justify-content-between"
+            >
+              <div class="header-left-column">
+                <div class="logo-box">
+                  <div class="logo">
+                    <a href="index.html"
+                      ><img src="assets/images/logo.png" alt="logo"
+                    /></a>
+                  </div>
                 </div>
-            </div>
-            <!-- Header Lower -->
-
-            <!-- sticky header -->
-            <div class="sticky-header">
-                <div class="header-upper">
-                    <div class="container">
-                        <div class="inner-container d-flex align-items-center justify-content-between">
-                            <div class="left-column d-flex align-items-center">
-                                <div class="logo-box">
-                                    <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="logo"></a></div>
-                                </div>
-                            </div>
-                            
-                            <div class="header-right-column d-flex align-items-center">
-                                <div class="nav-outer gap-5 d-flex align-items-center">
-                                    <div class="mobile-nav-toggler"><img src="assets/images/icons/icon-bar.png" alt="icon"></div>
-                                    <nav class="main-menu navbar-expand-md navbar-light"></nav>
-                                </div>
-                                <div class="header-right-btn-area">
-                                    <div class="header-language">
-                                        <div class="language-box-wrapper">
-                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#stickyModal">
-                                                <i class="fa-light fa-globe"></i>
-                                                <i class="fa-thin fa-angle-down"></i>
-                                            </button>
-                                            <div class="modal fade" id="stickyModal" tabindex="-1" aria-labelledby="stickyModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h1 class="modal-title fs-5" id="stickyModalLabel">Choose a language and region</h1>
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <div class="region-container">
-                                                                <div class="row">
-                                                                    <div class="col-lg-3 col-md-3">
-                                                                        <div class="region-box">
-                                                                            <h5 class="mb-15">Europe</h5>
-                                                                            <div class="region-list">
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/bg.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Български</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/cz.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Čeština</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/dk.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Dansk</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/de.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Deutsch</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/ee.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Eesti</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/es.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Español</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/fr.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Français</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/gr.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Ελληνικα</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/hr.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Hrvatski</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/it.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Italiano</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/bg.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Български</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/cz.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Čeština</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/dk.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Dansk</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-3 col-md-3">
-                                                                        <div class="region-box">
-                                                                            <h5 class="mb-15">Asia</h5>
-                                                                            <div class="region-list">
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/cn.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">简体中文</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/ph.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Tagalog</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/vn.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Tiếng Việt</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="region-box">
-                                                                            <h5 class="mb-15">Africa</h5>
-                                                                            <div class="region-list">
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/cn.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">简体中文</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/ph.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Tagalog</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/vn.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Tiếng Việt</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-3 col-md-3">
-                                                                        <div class="region-box">
-                                                                            <h5 class="mt-20 mb-15">Middle East</h5>
-                                                                            <div class="region-list">
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/sa.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">العربية</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/gr.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Ελληνικα</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/hr.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Hrvatski</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/it.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Italiano</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/es.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Español</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-3 col-md-3">
-                                                                        <div class="region-box">
-                                                                            <h5 class="mt-20 mb-15">America</h5>
-                                                                            <div class="region-list">
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/us.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">English</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/br.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Português</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/de.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Deutsch</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/ee.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Eesti</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/es.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Español</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                                <a href="#0" class="item">
-                                                                                    <img src="assets/images/mini-flag/fr.svg" alt="flag">
-                                                                                    <div class="country-name-content">
-                                                                                        <span class="country-name">Country Name</span>
-                                                                                        <span class="language-name">Français</span>
-                                                                                    </div>
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="signup-container">
-                                        <div class="dropdown">
-                                            <button class="cmn-dropdown-toggle btn-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <i class="fa-solid fa-user"></i> <span>Log In / Sign Up</span>
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-end">
-                                                <div class="signup-list">
-                                                    <ul>
-                                                        <li>
-                                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal">
-                                                                Log In
-                                                            </button>
-                                                        </li>
-                                                        <li>
-                                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#signinModal">
-                                                                Sign Up
-                                                            </button>
-                                                        </li>
-                                                        <li class="border"></li>
-                                                        <li><a href="enter-home.html">Set your Home</a></li>
-                                                        <li><a href="#0">Gift Card</a></li>
-                                                        <li><a href="help-center.html">Help Center </a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>                           
-                                </div>
-                            </div>
-                        </div>
+              </div>
+              <div class="header-right-column d-flex align-items-center">
+                <div class="nav-outer">
+                  <div class="mobile-nav-toggler">
+                    <img src="assets/images/icons/icon-bar.png" alt="icon" />
+                  </div>
+                  <nav class="main-menu navbar-expand-md navbar-light">
+                    <div
+                      class="collapse navbar-collapse show clearfix"
+                      id="navbarSupportedContent"
+                    >
+                      <ul class="navigation">
+                        <li class="dropdown">
+                          <a href="javascript:void(0);">Home</a>
+                          <ul>
+                            <li><a href="index.html">Home 01</a></li>
+                            <li><a href="index-2.html">Home 02</a></li>
+                            <li><a href="index-3.html">Home 03</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="javascript:void(0);">Trip boards</a>
+                          <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="service-1.html">Service </a></li>
+                            <li>
+                              <a href="services-details.html"
+                                >Service Details</a
+                              >
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li>
+                              <a href="blog-details.html">Blog Details</a>
+                            </li>
+                            <li><a href="error.html" class="active">404</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="add-home.html">Add your home</a></li>
+                      </ul>
                     </div>
+                  </nav>
                 </div>
-            </div>
-            <!-- sticky header -->
-
-            <!-- log in modal -->
-            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="loginModalLabel">Log In or Sign Up book</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="login-modal-container">
-                                <div class="login-modal-icon">
-                                    <a href="index.html"><img src="assets/images/favicon.png" alt="icon"></a>
-                                </div>
-                                <h4>Welcome to VibeStay</h4>
-                                <div class="sign-in-form">
-                                    <form>
-                                        <div class="sign-in-form-name">
-                                            <div class="sign-in-form-group">
-                                                <input type="text" name="fname" class="sign-in-input" placeholder="First Name">
-                                            </div>
-                                            <div class="sign-in-form-group">
-                                                <input type="text" name="lname" class="sign-in-input" placeholder="Last Name">
-                                            </div>
-                                        </div>
-                                        <div class="sign-in-form-group">
-                                            <input type="email" name="email" class="sign-in-input" placeholder="Enter your email...">
-                                        </div>
-                                        <div class="sign-in-form-group">
-                                            <div class="password-box">
-                                                <input type="password" name="password" class="sign-in-input password" placeholder="Password...">
-                                                <i class="password-icon fa-regular fa-eye"></i>
-                                            </div>
-                                        </div>
-                                        <div class="rember">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox">
-                                                <label>Remember me</label>
-                                            </div>
-                                        </div>
-                                        <div class="sign-in-btn">
-                                            <button type="submit" class="btn-1">Sign Up</button>
-                                        </div>
-                                    </form>
-                                    <div class="media-login">
-                                        <div class="media-login-border"><h5>OR</h5></div>
-                                        <ul>
-                                            <li><a href="#0"><img src="assets/images/icons/facebook.png" alt="icon"></a></li>
-                                            <li><a href="#0"><img src="assets/images/icons/google.png" alt="icon"></a></li>
-                                            <li><a href="#0"><img src="assets/images/icons/apple.png" alt="icon"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                <div class="header-right-btn-area">
+                  <div class="header-language">
+                    <div class="language-box-wrapper">
+                      <button
+                        type="button"
+                        class="btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        <i class="fa-light fa-globe"></i>
+                        <i class="fa-thin fa-angle-down"></i>
+                      </button>
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel"
+                              >
+                                Choose a language and region
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- log in modal -->
-
-            <!-- sign in modal -->
-            <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="signinModalLabel">Sign In book</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="signin-modal-container">
-                                <div class="login-modal-icon">
-                                    <a href="index.html"><img src="assets/images/favicon.png" alt="icon"></a>
-                                </div>
-                                <h4>Welcome to VibeStay</h4>
-                                <div class="sign-in-form">
-                                    <form>
-                                        <div class="sign-in-form-group">
-                                            <input type="email" name="email" class="sign-in-input" placeholder="Enter your email...">
-                                        </div>
-                                        <div class="sign-in-form-name">
-                                            <div class="sign-in-form-group">
-                                                <label>Password</label>
-                                                <div class="password-box">
-                                                    <input type="password" name="password" class="sign-in-input password" placeholder="Password...">
-                                                    <i class="password-icon fa-regular fa-eye"></i>
-                                                </div>
-                                            </div>
-                                            <div class="sign-in-form-group">
-                                                <label>Confirm Password</label>
-                                                <div class="password-box">
-                                                    <input type="password" name="password" class="sign-in-input password" placeholder="Confirm Password">
-                                                    <i class="password-icon fa-regular fa-eye"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="rember">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox">
-                                                <label>I agree with all the terms & conditions</label>
-                                            </div>
-                                        </div>
-                                        <div class="sign-in-btn">
-                                            <button type="submit" class="btn-1">Sign In</button>
-                                        </div>
-                                    </form>
-                                    <div class="media-login">
-                                        <div class="media-login-border"><h5>OR</h5></div>
-                                        <ul>
-                                            <li><a href="#0"><img src="assets/images/icons/facebook.png" alt="icon"></a></li>
-                                            <li><a href="#0"><img src="assets/images/icons/google.png" alt="icon"></a></li>
-                                            <li><a href="#0"><img src="assets/images/icons/apple.png" alt="icon"></a></li>
-                                        </ul>
+                            <div class="modal-body">
+                              <div class="region-container">
+                                <div class="row">
+                                  <div class="col-lg-3 col-md-3">
+                                    <div class="region-box">
+                                      <h5 class="mb-15">Europe</h5>
+                                      <div class="region-list">
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/bg.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Български</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/cz.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Čeština</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/dk.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Dansk</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/de.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Deutsch</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/ee.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Eesti</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/es.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Español</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/fr.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Français</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/gr.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Ελληνικα</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/hr.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Hrvatski</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/it.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Italiano</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/bg.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Български</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/cz.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Čeština</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/dk.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Dansk</span
+                                            >
+                                          </div>
+                                        </a>
+                                      </div>
                                     </div>
+                                  </div>
+                                  <div class="col-lg-3 col-md-3">
+                                    <div class="region-box">
+                                      <h5 class="mb-15">Asia</h5>
+                                      <div class="region-list">
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/cn.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >简体中文</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/ph.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Tagalog</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/vn.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Tiếng Việt</span
+                                            >
+                                          </div>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div class="region-box">
+                                      <h5 class="mb-15">Africa</h5>
+                                      <div class="region-list">
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/cn.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >简体中文</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/ph.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Tagalog</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/vn.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Tiếng Việt</span
+                                            >
+                                          </div>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-3 col-md-3">
+                                    <div class="region-box">
+                                      <h5 class="mt-20 mb-15">Middle East</h5>
+                                      <div class="region-list">
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/sa.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >العربية</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/gr.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Ελληνικα</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/hr.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Hrvatski</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/it.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Italiano</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/es.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Español</span
+                                            >
+                                          </div>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-3 col-md-3">
+                                    <div class="region-box">
+                                      <h5 class="mt-20 mb-15">America</h5>
+                                      <div class="region-list">
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/us.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >English</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/br.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Português</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/de.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Deutsch</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/ee.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Eesti</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/es.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Español</span
+                                            >
+                                          </div>
+                                        </a>
+                                        <a href="#0" class="item">
+                                          <img
+                                            src="assets/images/mini-flag/fr.svg"
+                                            alt="flag"
+                                          />
+                                          <div class="country-name-content">
+                                            <span class="country-name"
+                                              >Country Name</span
+                                            >
+                                            <span class="language-name"
+                                              >Français</span
+                                            >
+                                          </div>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
+                              </div>
                             </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="signup-container">
+                    <div class="dropdown">
+                      <button
+                        class="cmn-dropdown-toggle btn-2"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-user"></i>
+                        <span>Log In / Register</span>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-end">
+                        <div class="signup-list">
+                          <ul>
+                            <li>
+                              <button
+                                type="button"
+                                class="btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#loginModal"
+                              >
+                                Log In
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                type="button"
+                                class="btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#signinModal"
+                              >
+                                Sign Up
+                              </button>
+                            </li>
+                            <li class="border"></li>
+                            <li><a href="enter-home.html">Set your Home</a></li>
+                            <li><a href="#0">Gift Card</a></li>
+                            <li><a href="help-center.html">Help Center </a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <!-- sign in modal -->
+          </div>
+        </div>
+        <!-- Header Lower -->
 
-            <!-- mobile menu -->
-            <div class="mobile-menu">
-                <div class="menu-backdrop"></div>
-                <div class="close-btn"><span class="fal fa-times"></span></div>
-                
-                <nav class="menu-box">
-                    <div class="nav-logo"><a href="index.html"><img src="assets/images/logo.png" alt="logo"></a></div>
-                    <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-                    <!--Social Links-->
-                    <div class="social-media">
-                        <ul>
-                            <li><a href="#0"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#0"><i class="icon-twiter"></i></a></li>
-                            <li><a href="#0"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#0"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <!-- mobile menu -->
-
-            <!-- Bottom Mobile Menu -->
-            <ul class="nav bottom-nav fixed-bottom d-lg-none">
-                <li class="nav-item">
-                    <a class="nav-link mobile-nav-toggler" href="#"><i class="fa-light fa-list"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa-light fa-planet-ringed"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active"><i class="fa-light fa-house"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa-light fa-address-book"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa-light fa-user"></i></a>
-                </li>
-            </ul>
-            <!-- Bottom Mobile Menu -->
-
-        </header>
-        <!-- header -->
-
-
-         <!-- error -->
-         <section class="error pt_120 pb_120">
+        <!-- sticky header -->
+        <div class="sticky-header">
+          <div class="header-upper">
             <div class="container">
-                <div class="error-container text-center">
-                    <div class="error-image">
-                        <img src="assets/images/resource/error.gif" alt="error">
+              <div
+                class="inner-container d-flex align-items-center justify-content-between"
+              >
+                <div class="left-column d-flex align-items-center">
+                  <div class="logo-box">
+                    <div class="logo">
+                      <a href="index.html"
+                        ><img src="assets/images/logo.png" alt="logo"
+                      /></a>
                     </div>
-                    <div class="error-content">
-                        <h3 style="
-                            font-size: 48px;
-                            font-weight: 600;
-                            line-height: 56px;
-                            margin-bottom: 16px;">
-                            Something Went Wrong!
-                        </h3>
-                        <p style="
-                            max-width: 719px;
-                            width: 100%;
-                            margin: 0 auto;">
-                            The link you’re trying to access is probably broken, or the page has been removed.
-                        </p>
-                        <a href="index.html" class="btn-1 mt_30">Back to Home <i class="icon-arrow-1 fs_14"></i></a>
-                    </div>
+                  </div>
                 </div>
+
+                <div class="header-right-column d-flex align-items-center">
+                  <div class="nav-outer gap-5 d-flex align-items-center">
+                    <div class="mobile-nav-toggler">
+                      <img src="assets/images/icons/icon-bar.png" alt="icon" />
+                    </div>
+                    <nav class="main-menu navbar-expand-md navbar-light"></nav>
+                  </div>
+                  <div class="header-right-btn-area">
+                    <div class="header-language">
+                      <div class="language-box-wrapper">
+                        <button
+                          type="button"
+                          class="btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#stickyModal"
+                        >
+                          <i class="fa-light fa-globe"></i>
+                          <i class="fa-thin fa-angle-down"></i>
+                        </button>
+                        <div
+                          class="modal fade"
+                          id="stickyModal"
+                          tabindex="-1"
+                          aria-labelledby="stickyModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1
+                                  class="modal-title fs-5"
+                                  id="stickyModalLabel"
+                                >
+                                  Choose a language and region
+                                </h1>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="region-container">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-3">
+                                      <div class="region-box">
+                                        <h5 class="mb-15">Europe</h5>
+                                        <div class="region-list">
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/bg.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Български</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/cz.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Čeština</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/dk.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Dansk</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/de.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Deutsch</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/ee.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Eesti</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/es.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Español</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/fr.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Français</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/gr.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Ελληνικα</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/hr.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Hrvatski</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/it.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Italiano</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/bg.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Български</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/cz.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Čeština</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/dk.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Dansk</span
+                                              >
+                                            </div>
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                      <div class="region-box">
+                                        <h5 class="mb-15">Asia</h5>
+                                        <div class="region-list">
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/cn.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >简体中文</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/ph.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Tagalog</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/vn.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Tiếng Việt</span
+                                              >
+                                            </div>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="region-box">
+                                        <h5 class="mb-15">Africa</h5>
+                                        <div class="region-list">
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/cn.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >简体中文</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/ph.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Tagalog</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/vn.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Tiếng Việt</span
+                                              >
+                                            </div>
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                      <div class="region-box">
+                                        <h5 class="mt-20 mb-15">Middle East</h5>
+                                        <div class="region-list">
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/sa.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >العربية</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/gr.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Ελληνικα</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/hr.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Hrvatski</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/it.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Italiano</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/es.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Español</span
+                                              >
+                                            </div>
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                      <div class="region-box">
+                                        <h5 class="mt-20 mb-15">America</h5>
+                                        <div class="region-list">
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/us.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >English</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/br.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Português</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/de.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Deutsch</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/ee.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Eesti</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/es.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Español</span
+                                              >
+                                            </div>
+                                          </a>
+                                          <a href="#0" class="item">
+                                            <img
+                                              src="assets/images/mini-flag/fr.svg"
+                                              alt="flag"
+                                            />
+                                            <div class="country-name-content">
+                                              <span class="country-name"
+                                                >Country Name</span
+                                              >
+                                              <span class="language-name"
+                                                >Français</span
+                                              >
+                                            </div>
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="signup-container">
+                      <div class="dropdown">
+                        <button
+                          class="cmn-dropdown-toggle btn-2"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="fa-solid fa-user"></i>
+                          <span>Log In / Register</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <div class="signup-list">
+                            <ul>
+                              <li>
+                                <button
+                                  type="button"
+                                  class="btn"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#loginModal"
+                                >
+                                  Log In
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  type="button"
+                                  class="btn"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#signinModal"
+                                >
+                                  Sign Up
+                                </button>
+                              </li>
+                              <li class="border"></li>
+                              <li>
+                                <a href="enter-home.html">Set your Home</a>
+                              </li>
+                              <li><a href="#0">Gift Card</a></li>
+                              <li>
+                                <a href="help-center.html">Help Center </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        <!-- error -->
+          </div>
+        </div>
+        <!-- sticky header -->
 
-        
+        <!-- log in modal -->
+        <div
+          class="modal fade"
+          id="loginModal"
+          tabindex="-1"
+          aria-labelledby="loginModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="loginModalLabel">
+                  Log In or Sign Up book
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="login-modal-container">
+                  <div class="login-modal-icon">
+                    <a href="index.html"
+                      ><img src="assets/images/favicon.png" alt="icon"
+                    /></a>
+                  </div>
+                  <h4>Welcome to VibeStay</h4>
+                  <div class="sign-in-form">
+                    <form>
+                      <div class="sign-in-form-name">
+                        <div class="sign-in-form-group">
+                          <input
+                            type="text"
+                            name="fname"
+                            class="sign-in-input"
+                            placeholder="First Name"
+                          />
+                        </div>
+                        <div class="sign-in-form-group">
+                          <input
+                            type="text"
+                            name="lname"
+                            class="sign-in-input"
+                            placeholder="Last Name"
+                          />
+                        </div>
+                      </div>
+                      <div class="sign-in-form-group">
+                        <input
+                          type="email"
+                          name="email"
+                          class="sign-in-input"
+                          placeholder="Enter your email..."
+                        />
+                      </div>
+                      <div class="sign-in-form-group">
+                        <div class="password-box">
+                          <input
+                            type="password"
+                            name="password"
+                            class="sign-in-input password"
+                            placeholder="Password..."
+                          />
+                          <i class="password-icon fa-regular fa-eye"></i>
+                        </div>
+                      </div>
+                      <div class="rember">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" />
+                          <label>Remember me</label>
+                        </div>
+                      </div>
+                      <div class="sign-in-btn">
+                        <button type="submit" class="btn-1">Sign Up</button>
+                      </div>
+                    </form>
+                    <div class="media-login">
+                      <div class="media-login-border"><h5>OR</h5></div>
+                      <ul>
+                        <li>
+                          <a href="#0"
+                            ><img
+                              src="assets/images/icons/facebook.png"
+                              alt="icon"
+                          /></a>
+                        </li>
+                        <li>
+                          <a href="#0"
+                            ><img
+                              src="assets/images/icons/google.png"
+                              alt="icon"
+                          /></a>
+                        </li>
+                        <li>
+                          <a href="#0"
+                            ><img
+                              src="assets/images/icons/apple.png"
+                              alt="icon"
+                          /></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- log in modal -->
+
+        <!-- sign in modal -->
+        <div
+          class="modal fade"
+          id="signinModal"
+          tabindex="-1"
+          aria-labelledby="signinModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="signinModalLabel">
+                  Sign In book
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="signin-modal-container">
+                  <div class="login-modal-icon">
+                    <a href="index.html"
+                      ><img src="assets/images/favicon.png" alt="icon"
+                    /></a>
+                  </div>
+                  <h4>Welcome to VibeStay</h4>
+                  <div class="sign-in-form">
+                    <form>
+                      <div class="sign-in-form-group">
+                        <input
+                          type="email"
+                          name="email"
+                          class="sign-in-input"
+                          placeholder="Enter your email..."
+                        />
+                      </div>
+                      <div class="sign-in-form-name">
+                        <div class="sign-in-form-group">
+                          <label>Password</label>
+                          <div class="password-box">
+                            <input
+                              type="password"
+                              name="password"
+                              class="sign-in-input password"
+                              placeholder="Password..."
+                            />
+                            <i class="password-icon fa-regular fa-eye"></i>
+                          </div>
+                        </div>
+                        <div class="sign-in-form-group">
+                          <label>Confirm Password</label>
+                          <div class="password-box">
+                            <input
+                              type="password"
+                              name="password"
+                              class="sign-in-input password"
+                              placeholder="Confirm Password"
+                            />
+                            <i class="password-icon fa-regular fa-eye"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rember">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" />
+                          <label>I agree with all the terms & conditions</label>
+                        </div>
+                      </div>
+                      <div class="sign-in-btn">
+                        <button type="submit" class="btn-1">Sign In</button>
+                      </div>
+                    </form>
+                    <div class="media-login">
+                      <div class="media-login-border"><h5>OR</h5></div>
+                      <ul>
+                        <li>
+                          <a href="#0"
+                            ><img
+                              src="assets/images/icons/facebook.png"
+                              alt="icon"
+                          /></a>
+                        </li>
+                        <li>
+                          <a href="#0"
+                            ><img
+                              src="assets/images/icons/google.png"
+                              alt="icon"
+                          /></a>
+                        </li>
+                        <li>
+                          <a href="#0"
+                            ><img
+                              src="assets/images/icons/apple.png"
+                              alt="icon"
+                          /></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sign in modal -->
+
+        <!-- mobile menu -->
+        <div class="mobile-menu">
+          <div class="menu-backdrop"></div>
+          <div class="close-btn"><span class="fal fa-times"></span></div>
+
+          <nav class="menu-box">
+            <div class="nav-logo">
+              <a href="index.html"
+                ><img src="assets/images/logo.png" alt="logo"
+              /></a>
+            </div>
+            <div class="menu-outer">
+              <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+            </div>
+            <!--Social Links-->
+            <div class="social-media">
+              <ul>
+                <li>
+                  <a href="#0"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="icon-twiter"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- mobile menu -->
+
+        <!-- Bottom Mobile Menu -->
+        <ul class="nav bottom-nav fixed-bottom d-lg-none">
+          <li class="nav-item">
+            <a class="nav-link mobile-nav-toggler" href="#"
+              ><i class="fa-light fa-list"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fa-light fa-planet-ringed"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"><i class="fa-light fa-house"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fa-light fa-address-book"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-light fa-user"></i></a>
+          </li>
+        </ul>
+        <!-- Bottom Mobile Menu -->
+      </header>
+      <!-- header -->
+
+      <!-- error -->
+      <section class="error pt_120 pb_120">
+        <div class="container">
+          <div class="error-container text-center">
+            <div class="error-image">
+              <img src="assets/images/resource/error.gif" alt="error" />
+            </div>
+            <div class="error-content">
+              <h3
+                style="
+                  font-size: 48px;
+                  font-weight: 600;
+                  line-height: 56px;
+                  margin-bottom: 16px;
+                "
+              >
+                Something Went Wrong!
+              </h3>
+              <p style="max-width: 719px; width: 100%; margin: 0 auto">
+                The link you’re trying to access is probably broken, or the page
+                has been removed.
+              </p>
+              <a href="index.html" class="btn-1 mt_30"
+                >Back to Home <i class="icon-arrow-1 fs_14"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- error -->
     </div>
-
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -924,6 +1564,5 @@
     <script src="assets/js/nouislider.min.js"></script>
     <script src="assets/js/daterangepicker.min.js"></script>
     <script src="assets/js/script.js"></script>
-
-</body>
+  </body>
 </html>
